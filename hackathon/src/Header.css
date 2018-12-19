@@ -7,12 +7,12 @@ body {
   height: 100%;
 }
 
-body {
+/* /* body {
   min-height: 100vh;
   background: #fff;
   position: relative;
   font-family: "Dosis", sans-serif;
-}
+} */
 
 body::before {
   content: "";
@@ -34,9 +34,8 @@ body::before {
   background-size: 25% 100%;
   background-repeat: repeat-X;
 }
-
-.wrap {
-  position: absolute;
+*/ .wrap {
+  position: relative;
   top: 20%;
   left: 50%;
   width: 100%;
