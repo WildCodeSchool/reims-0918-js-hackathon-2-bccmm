@@ -5,6 +5,7 @@ import questionQuiz from "./API/questionQuiz";
 import Header from "./Header";
 import QuizLaser from "./Components/QuizLaser";
 import QuizLightPainting from "./Components/QuizLightPainting";
+import QuizEscapeGames from "./Components/QuizEscapeGames";
 
 class App extends Component {
   
@@ -14,6 +15,7 @@ class App extends Component {
         <Header />
         <QuizLaser />
         <QuizLightPainting />
+        <QuizEscapeGames />
       </div>
     )
   }

@@ -1,11 +1,11 @@
 import React from "react";
 import Checkboxes from "./Checkboxes";
-import {questionQuizLaser} from "../API/questionQuiz";
+import {questionQuizEscapeGames} from "../API/questionQuiz";
 
-const QuizLaser =() =>{
+const QuizEscapeGames =() =>{
     return(
         <div>
-            {questionQuizLaser.map(
+            {questionQuizEscapeGames.map(
                 (question, index)=>(
                     <Checkboxes {...question}
                     key={index}/>
@@ -14,4 +14,4 @@ const QuizLaser =() =>{
         </div>
     );
 };
-export default QuizLaser;
+export default QuizEscapeGames;

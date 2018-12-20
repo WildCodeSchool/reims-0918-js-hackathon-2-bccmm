@@ -1,4 +1,4 @@
-const questionQuiz = [
+export const questionQuizImp3D = [
   {
     id: 1,
     question: "Que peut-on faire avec une imprimante 3D ?",
@@ -69,7 +69,8 @@ const questionQuiz = [
     ]
   }
 ];
-const questionQuizLaser = [
+
+export const questionQuizLaser = [
   {
     id: 1,
     question: "Cette machine coupe bois, plexiglas, médium et grave verre et cuir grâce à ?",
@@ -128,7 +129,9 @@ const questionQuizLaser = [
     ]
   },
 ];
-const questionQuizLightPainting = [
+
+
+export const questionQuizLightPainting = [
   {
     id: 1,
     question: "Qu'est ce que le light painting ?",
@@ -187,4 +190,65 @@ const questionQuizLightPainting = [
     ]
   },
 ];
-export default (questionQuiz,questionQuizLaser,questionQuizLightPainting);
+export const questionQuizEscapeGames = [
+  {
+    id: 1,
+    question: "C'est quoi un escape game ?",
+    answers: [
+      {
+        type: { imageUrl: "", explication: "" },
+        content: "Les participants sont enfermés à l’intérieur d’une salle ?"
+      },
+
+      {
+        type: { imageUrl: "", explication: "" },
+        content: "Les participants doivent trouver des énigmes à résoudre ?"
+      },
+      {
+        type: { imageUrl: "", explication: "" },
+        content: "Les participants doivent tenter de sortir en moins de 60 minutes ?"
+      }
+    ]
+  },
+  {
+    id: 2,
+    question: "Concevoir les énigmes d’un Escape Game",
+    answers: [
+      {
+        type: { imageUrl: "", explication: "" },
+        content: "Varier le type d’énigme : codes avec chiffres / codes avec lettres "
+      },
+
+      {
+        type: { imageUrl: "", explication: "" },
+        content: "Cacher les éléments : les énigmes doivent être cachés, mais pas trop"
+      },
+      {
+        type: { imageUrl: "", explication: "" },
+        content: "Le nombre d’énigmes à proposer dépend du nombre de participants, du temps disponible, de leur complexité"
+      }
+    ]
+  },
+  {
+    id: 3,
+    question: "Créer des effets spéciaux",
+    answers: [
+      {
+        type: { imageUrl: "", explication: "" },
+        content: "Diffuser une musique d’ambiance (stressante, sinistre…)."
+      },
+
+      {
+        type: { imageUrl: "", explication: "" },
+        content: "L’éclairage (ou l’absence d’éclairage) contribue à l’ambiance."
+      },
+      {
+        type: { imageUrl: "", explication: "" },
+        content: "Maquiller les participants et les déguiser pour rendre l’aventure encore plus réaliste"
+      }
+    ]
+  },
+  
+];
+
+
