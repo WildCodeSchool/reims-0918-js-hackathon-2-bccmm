@@ -9,7 +9,8 @@ const styles = theme => ({
     display: "flex",
     flexWrap: "wrap",
     minWidth: 300,
-    width: "100%"
+    width: "100%",
+    textAlign: "center"
   },
   image: {
     position: "relative",
@@ -33,7 +34,7 @@ const styles = theme => ({
   },
   focusVisible: {},
   imageButton: {
-    position: "relative",
+    position: "absolute",
     left: 0,
     right: 0,
     top: 0,
@@ -65,7 +66,8 @@ const styles = theme => ({
   imageTitle: {
     position: "relative",
     padding: `${theme.spacing.unit * 2}px ${theme.spacing.unit * 4}px ${theme
-      .spacing.unit + 6}px`
+      .spacing.unit + 6}px`,
+    textTransform: "none"
   },
   imageMarked: {
     height: 3,
@@ -82,25 +84,25 @@ const images = [
   {
     url: "https://www.numerama.com/content/uploads/2016/10/3d-impression.jpg",
     title: "Impression 3D",
-    width: "30%"
+    width: "50%"
   },
   {
     url:
       "https://www.abf-escaliers.fr/wp-content/uploads/2017/10/decoupe-laser-slide-1600x1000-1024x640.jpg",
     title: "Découpe laser",
-    width: "30%"
+    width: "50%"
   },
   {
     url:
       "http://objectif-photographe.fr/wp-content/uploads/2013/11/lightpainting01.jpg",
     title: "Light painting",
-    width: "30%"
+    width: "50%"
   },
   {
     url:
       "https://france3-regions.francetvinfo.fr/bourgogne-franche-comte/sites/regions_france3/files/styles/top_big/public/assets/images/2018/04/25/live-escape-game-1155620_1920-3626707.jpg?itok=pT2h3Pta",
     title: "Escape game",
-    width: "30%"
+    width: "50%"
   }
 ];
 
@@ -130,7 +132,8 @@ const HomePage = props => {
               className={classes.image}
               focusVisibleClassName={classes.focusVisible}
               style={{
-                width: image.width
+                width: image.width,
+                margin: 50
               }}
             >
               <span
@@ -143,7 +146,7 @@ const HomePage = props => {
               <span className={classes.imageButton}>
                 <Typography
                   component="span"
-                  variant="subtitle1"
+                  variant="title"
                   color="inherit"
                   className={classes.imageTitle}
                 >
