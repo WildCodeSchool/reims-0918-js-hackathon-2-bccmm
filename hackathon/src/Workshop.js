@@ -16,8 +16,9 @@ const styles = {
     marginLeft: "50px"
   },
   title: {
-    fontSize: "1rem",
-    color: "white"
+    fontSize: "1.5rem",
+    color: "white",
+    fontWeight: "bold"
   },
   pos: {
     marginBottom: 12
@@ -31,6 +32,9 @@ const styles = {
     minWidth: 275,
     padding: "20px",
     marginRight: "20px"
+    // display: "flex",
+    // flexWrap: "wrap",
+    // width: "100%"
   },
   root: {
     display: "flex",
@@ -53,7 +57,7 @@ const Workshop = props => {
             <Card className={classes.workshop}>
               <CardContent>
                 <Typography className={classes.title}>
-                  <h2>Vacancesdigitales</h2>
+                  Vacancesdigitales
                 </Typography>
               </CardContent>
             </Card>

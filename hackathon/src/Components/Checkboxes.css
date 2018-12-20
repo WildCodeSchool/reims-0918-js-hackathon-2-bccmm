@@ -1,7 +1,4 @@
-@font-face {
-  font-family: "The Northern Block - Cobol-Bold";
-  src: url("../Fonts/The Northern Block - Cobol-Bold.otf");
-}
+
 
 .CheckBoxes-root-144 .MuiFormLabel-root-151,
 .MuiFormGroup-root-158 span,
@@ -10,7 +7,24 @@
   src: url("../Fonts/The Northern Block - Cobol-Bold.otf") !important;
 }
 
-.MuiRadio-colorSecondary-170.MuiRadio-checked-167 span {
-  color: #005f82;
+.MuiButtonBase-root-39 {
+  color: #005f82 !important;
 }
 
+.MuiRadio-checked-25 {
+  color: #ef914b !important;
+}
+
+.CheckBoxes-question-4 {
+  color: #ef914b !important;
+  text-decoration: underline #005f82;
+}
+
+@font-face {
+  font-family: "The Northern Block - Cobol-Bold";
+  src: url("/..Fonts/The Northern Block - Cobol-Bold.otf");
+}
+
+h2, h3 {
+  font-family: "The Northern Block - Cobol-Bold";
+}
