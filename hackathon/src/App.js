@@ -3,6 +3,7 @@ import Checkboxes from "./Components/Checkboxes";
 import "./App.css";
 import questionQuiz from "./API/questionQuiz";
 import Header from "./Header";
+import QuizLaser from "./Components/QuizLaser";
 
 class App extends Component {
   
@@ -10,9 +11,7 @@ class App extends Component {
     return (
       <div>
         <Header />
-        {questionQuiz.map((question, index) => (
-          <Checkboxes {...question} key={index} />
-        ))}
+        <QuizLaser />
       </div>
     )
   }

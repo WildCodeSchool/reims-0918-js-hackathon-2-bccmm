@@ -69,5 +69,63 @@ const questionQuiz = [
     ]
   }
 ];
+const questionQuizLaser = [
+  {
+    id: 1,
+    question: "Cette machine coupe bois, plexiglas, médium et grave verre et cuir grâce à ?",
+    answers: [
+      {
+        type: { imageUrl: "", explication: "" },
+        content: "Un laser"
+      },
 
-export default questionQuiz;
+      {
+        type: { imageUrl: "", explication: "" },
+        content: "une température élevé"
+      },
+      {
+        type: { imageUrl: "", explication: "" },
+        content: "un gaz"
+      }
+    ]
+  },
+  {
+    id: 2,
+    question: "Cette machine s'utilise avec ?",
+    answers: [
+      {
+        type: { imageUrl: "", explication: "" },
+        content: "De la matière "
+      },
+
+      {
+        type: { imageUrl: "", explication: "" },
+        content: "Un extracteur de fumée et/ou un filtre "
+      },
+      {
+        type: { imageUrl: "", explication: "" },
+        content: "Un couvercle traité"
+      }
+    ]
+  },
+  {
+    id: 3,
+    question: "Quel gaz peut être ajouter a la zone de découpage pour en améliorer l'efficacité ?",
+    answers: [
+      {
+        type: { imageUrl: "", explication: "" },
+        content: "Argon"
+      },
+
+      {
+        type: { imageUrl: "", explication: "" },
+        content: "Azote "
+      },
+      {
+        type: { imageUrl: "", explication: "" },
+        content: "CO2"
+      }
+    ]
+  },
+];
+export default (questionQuiz,questionQuizLaser);
