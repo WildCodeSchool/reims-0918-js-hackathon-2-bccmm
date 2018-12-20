@@ -7,7 +7,6 @@ import Button from "@material-ui/core/Button";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 import FormControl from "@material-ui/core/FormControl";
 import FormLabel from "@material-ui/core/FormLabel";
-import "./Checkboxes.css"
 
 const styles = theme => ({
   root: {
@@ -46,7 +45,6 @@ class CheckBoxes extends Component {
           >
             {this.props.answers.map((answer, index) => (
               <FormControlLabel
-                className="font"
                 value={answer.content}
                 control={<Radio />}
                 label={answer.content}

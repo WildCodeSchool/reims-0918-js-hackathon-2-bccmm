@@ -9,3 +9,15 @@
   font-family: "The Northern Block - Cobol-Bold" !important;
   src: url("../Fonts/The Northern Block - Cobol-Bold.otf") !important;
 }
+
+.MuiRadio-colorSecondary-27.MuiRadio-checked-24 span {
+  color: #ef914b;
+}
+
+/* .MuiButton-containedSecondary-98:hover span{
+  color: #ef914b;
+} */
+
+/* .MuiTouchRipple-root-111 span {
+    color:#005f82
+} */
