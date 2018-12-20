@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+/* /* body {
+  min-height: 100vh;
+  background: #fff;
+  position: relative;
+  font-family: "Dosis", sans-serif;
+} */
+
+/* body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  width: 100%;
+  height: 3.5%;
+  background-image: linear-gradient(
+    to left,
+    rgba(0, 255, 255, 0.8),
+    rgba(0, 255, 255, 10.8) 25%,
+    rgba(255, 0, 255, 0.8) 25%,
+    rgba(255, 0, 255, 0.8) 50%,
+    rgba(255, 255, 0, 0.8) 50%,
+    rgba(255, 255, 0, 0.8) 75%,
+    rgba(0, 0, 0, 0.8) 75%
+  );
+  background-size: 25% 100%;
+  background-repeat: repeat-X;
+} */
+.wrap {
+  position: relative;
+  top: 20%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+}
+
+h1 {
+  font-size: 15vw;
+  text-align: center;
+}
+
+span {
+  display: inline-block;
+  transition: transform 0.2s ease-in-out;
+  border-bottom: 0.05em solid #fff;
+}
+
+.blue {
+  text-shadow: -0.025em -0.025em 0 #005f82;
+  animation-duration: 0.3s, 0.2s;
+  animation-delay: 0, 0.3s;
+  animation-name: colorflash, underline-cyan;
+  animation-fill-mode: none, forwards;
+}
+
+.orange {
+  text-shadow: 0.025em 0.025em 0 #ef914b;
+  animation-duration: 0.3s, 0.2s;
+  animation-delay: 0.3s, 0.5s;
+  animation-name: colorflash, underline-magenta;
+  animation-fill-mode: none, forwards;
+}
+
+.c:hover {
+  transform: rotateY(20deg) rotateZ(28deg) scale(1.2);
+}
+
+.m:hover {
+  transform: rotateY(-10deg) rotateZ(-20deg) scale(1.1);
+}
+
+.y:hover {
+  transform: rotateY(10deg) rotateZ(12deg) scale(1.3);
+}
+
+.k:hover {
+  transform: rotateY(-15deg) rotateZ(-15deg) scale(1.24);
+}
+
+@keyframes colorflash {
+  0% {
+    color: #005f82;
+    transform: translateY(-10%);
+  }
+  33% {
+    color: #ef914b;
+    transform: translateY(-5%);
+  }
+  66% {
+    color: #005f82;
+    transform: translateY(5%);
+  }
+  100% {
+    color: #ef914b;
+    transform: translateY(0);
+  }
+}
+
+@keyframes underline-cyan {
+  to {
+    border-bottom-color: #ef914b;
+  }
+}
+
+@keyframes underline-yellow {
+  to {
+    border-bottom-color: #005f82;
+  }
+}
+
+@keyframes underline-magenta {
+  to {
+    border-bottom-color: #005f82;
+  }
+}
+
+@keyframes underline-black {
+  to {
+    border-bottom-color: rgba(0, 0, 0, 0.7);
+  }
+}
+
+@media screen and (max-width: 27rem) {
+  h1 {
+    font-size: 15vmax;
+  }
+  body::before {
+    background-size: 50%;
+  }
+}
+
+@font-face {
+  font-family: "The Northern Block - Cobol-Bold";
+  src: url("Fonts/The Northern Block - Cobol-Bold.otf");
+}
+
+h1 {
+  font-family: "The Northern Block - Cobol-Bold";
+  src: url("Fonts/The Northern Block - Cobol-Bold.otf");
+}
