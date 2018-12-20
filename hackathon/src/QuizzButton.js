@@ -3,8 +3,8 @@ import { withStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
 import ButtonBase from "@material-ui/core/ButtonBase";
 import Typography from "@material-ui/core/Typography";
-import { Link, withRouter } from "react-router-dom";
-
+import { Link } from "react-router-dom";
+import Workshop from "./Workshop";
 
 const styles = theme => ({
   root: {
@@ -85,7 +85,7 @@ const styles = theme => ({
 const images = [
   {
     url: "https://www.numerama.com/content/uploads/2016/10/3d-impression.jpg",
-    title: "Impression3D",
+    title: "Impression 3D",
     width: "50%",
     route: "/QuizImp3D"
   },
@@ -93,73 +93,62 @@ const images = [
     url:
       "https://www.abf-escaliers.fr/wp-content/uploads/2017/10/decoupe-laser-slide-1600x1000-1024x640.jpg",
     title: "Découpe laser",
-    width: "50%"
+    width: "50%",
+    route: "/QuizLaser"
   },
   {
     url:
       "http://objectif-photographe.fr/wp-content/uploads/2013/11/lightpainting01.jpg",
     title: "Light painting",
-    width: "50%"
+    width: "50%",
+    route: "/QuizLightpainting"
   },
   {
     url:
       "https://france3-regions.francetvinfo.fr/bourgogne-franche-comte/sites/regions_france3/files/styles/top_big/public/assets/images/2018/04/25/live-escape-game-1155620_1920-3626707.jpg?itok=pT2h3Pta",
     title: "Escape game",
-    width: "50%"
+    width: "50%",
+    route: "/QuizEscapeGame"
   }
 ];
 
-const HomePage = props => {
+const QuizzButton = props => {
   const { classes } = props;
   return (
     <div>
-      <h2>Vacancesdigitales</h2>
-      <h4>QUAND ?</h4>
-      <p>Pendant la période des vacances scolaires.</p>
-      <h4>QUI ?</h4>
-      <p>Pour les enfants, à partir de 7 ans.</p>
-      <h4>QUOII ?</h4>
-      <p>
-        Atelier créatifs et ludiques, autour des nouvelles technologies et
-        nouveaux outils assistés par ordinateur.
-      </p>
-      <br />
-      <p>A chaque fois un nouveau thème et des surprises !</p>
-
+      <Workshop />
       <div className={classes.root}>
-      
         {images.map(image => (
-          <Grid item xs={6}>
-           <Link to={`${image.route}`}> 
-            <ButtonBase
-              focusRipple
-              key={image.title}
-              className={classes.image}
-              focusVisibleClassName={classes.focusVisible}
-              style={{
-                width: image.width,
-                margin: 50
-              }}
-            >
-              <span
-                className={classes.imageSrc}
+          <Grid item xs={6} key={image.title}>
+            <Link to={`${image.route}`}>
+              <ButtonBase
+                focusRipple
+                className={classes.image}
+                focusVisibleClassName={classes.focusVisible}
                 style={{
-                  backgroundImage: `url(${image.url})`
+                  width: image.width,
+                  margin: 50
                 }}
-              />
-              <span className={classes.imageBackdrop} />
-              <span className={classes.imageButton}>
-                <Typography
-                  component="span"
-                  variant="title"
-                  color="inherit"
-                  className={classes.imageTitle}
-                >
-                  {image.title}
-                  <span className={classes.imageMarked} />
-                </Typography>
-              </span>
-            </ButtonBase>
+              >
+                <span
+                  className={classes.imageSrc}
+                  style={{
+                    backgroundImage: `url(${image.url})`
+                  }}
+                />
+                <span className={classes.imageBackdrop} />
+                <span className={classes.imageButton}>
+                  <Typography
+                    component="span"
+                    variant="title"
+                    color="inherit"
+                    className={classes.imageTitle}
+                  >
+                    {image.title}
+                    <span className={classes.imageMarked} />
+                  </Typography>
+                </span>
+              </ButtonBase>
             </Link>
           </Grid>
         ))}
@@ -168,5 +157,4 @@ const HomePage = props => {
   );
 };
 
-export default withStyles(styles)(HomePage);
-
+export default withStyles(styles)(QuizzButton);
