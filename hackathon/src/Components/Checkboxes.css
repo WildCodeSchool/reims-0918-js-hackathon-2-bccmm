@@ -1,0 +1,9 @@
+@font-face {
+  font-family: "The Northern Block - Cobol-Bold";
+  src: url("../Fonts/The Northern Block - Cobol-Bold.otf");
+}
+
+.CheckBoxes-root-1 .MuiFormLabel-root-8, .MuiFormControlLabel-root-17 span{
+  font-family: "The Northern Block - Cobol-Bold" !important;
+  src: url("../Fonts/The Northern Block - Cobol-Bold.otf") !important;
+}
