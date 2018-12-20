@@ -126,16 +126,16 @@ export const questionQuizLaser = [
     question: "Cette machine s'utilise avec ?",
     answers: [
       {
-        type: { imageUrl: "", explication: "" },
+        type: { imageUrl: "https://cprint-sourcing.news/wp-content/uploads/2017/05/lucent-matiere-a-decoupe-4.jpg", explication: "vous pouvez découper, graver et marquer au laser de nombreuses matières : plastiques, bois, caoutchouc, cuir, métaux, textiles et bien plus encore" },
         content: "De la matière "
       },
 
       {
-        type: { imageUrl: "", explication: "" },
+        type: { imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmRqd2Tv4t4Pxu2M3NYS-l2FlVaezKlB40SPXmPuToP8cowVxN", explication: "Extracteur filtreur de fumée pour machines laser ... Pour la gravure et la découpe laser de produits dégageant des fumées" },
         content: "Un extracteur de fumée et/ou un filtre "
       },
       {
-        type: { imageUrl: "", explication: "" },
+        type: { imageUrl: "http://www.hellopro.fr/images/produit-2/4/1/0/machine-de-gravure-et-d-coupe-laser-co2-s-rie-g-6191014.jpg", explication: " Les couverclesg de protection agissent comme une protection pour le laser." },
         content: "Un couvercle traité"
       }
     ]
@@ -145,16 +145,16 @@ export const questionQuizLaser = [
     question: "Quel gaz peut être ajouter a la zone de découpage pour en améliorer l'efficacité ?",
     answers: [
       {
-        type: { imageUrl: "", explication: "" },
+        type: { imageUrl: "https://www.trumpf.com/filestorage/TRUMPF_Master/_processed_/b/c/csm_Lasers-applications-laser-metal-deposition-process_503350c0cd.jpg", explication: "Magnésium, titane & autres matériaux réactifs – argon (haute pression) " },
         content: "Argon"
       },
 
       {
-        type: { imageUrl: "", explication: "" },
+        type: { imageUrl: "http://rpn.univ-lorraine.fr/UNIT/physique-quantique-volet1/res/indus3.jpg", explication: "Aciers inoxydables, aluminium & alliages – azote (haute pression)" },
         content: "Azote "
       },
       {
-        type: { imageUrl: "", explication: "" },
+        type: { imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRyKgM8ry_l1lf603b4P6jxmHOBtpZ5GuBJvfBerIBxzqOUz9WXg", explication: "Carbone et aciers faiblement alliés – oxygène ou azote (haute pression) " },
         content: "CO2"
       }
     ]
