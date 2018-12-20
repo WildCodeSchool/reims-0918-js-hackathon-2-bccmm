@@ -1,17 +1,15 @@
 import React, { Component } from "react";
-import Checkboxes from "./Components/Checkboxes";
 import "./App.css";
-import questionQuiz from "./API/questionQuiz";
+import QuizImp3D from "./Components/QuizImp3D";
 import Header from "./Header";
+import HomePage from "./HomePage";
 
 class App extends Component {
   render() {
     return (
       <div>
         <Header />
-        {questionQuiz.map((question, index) => (
-          <Checkboxes {...question} key={index} />
-        ))}
+        <QuizImp3D />
       </div>
     );
   }
