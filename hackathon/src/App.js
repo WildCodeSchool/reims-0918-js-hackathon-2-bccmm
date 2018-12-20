@@ -3,14 +3,16 @@ import Checkboxes from "./Components/Checkboxes";
 import "./App.css";
 import questionQuiz from "./API/questionQuiz";
 import Header from "./Header";
-import HomePage from "./HomePage";
+import QuizzButton from "./QuizzButton";
+import Workshop from "./Workshop";
 
 class App extends Component {
   render() {
     return (
       <div>
         <Header />
-        <HomePage />
+        <Workshop />
+        <QuizzButton />
         {questionQuiz.map((question, index) => (
           <Checkboxes {...question} key={index} />
         ))}

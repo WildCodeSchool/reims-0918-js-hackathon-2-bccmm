@@ -106,23 +106,10 @@ const images = [
   }
 ];
 
-const HomePage = props => {
+const QuizzButton = props => {
   const { classes } = props;
   return (
     <div>
-      <h2>Vacancesdigitales</h2>
-      <h4>QUAND ?</h4>
-      <p>Pendant la période des vacances scolaires.</p>
-      <h4>QUI ?</h4>
-      <p>Pour les enfants, à partir de 7 ans.</p>
-      <h4>QUOII ?</h4>
-      <p>
-        Atelier créatifs et ludiques, autour des nouvelles technologies et
-        nouveaux outils assistés par ordinateur.
-      </p>
-      <br />
-      <p>A chaque fois un nouveau thème et des surprises !</p>
-
       <div className={classes.root}>
         {images.map(image => (
           <Grid item xs={6}>
@@ -162,4 +149,4 @@ const HomePage = props => {
   );
 };
 
-export default withStyles(styles)(HomePage);
+export default withStyles(styles)(QuizzButton);
