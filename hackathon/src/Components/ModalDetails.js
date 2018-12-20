@@ -27,7 +27,10 @@ const styles = theme => ({
   img: {
     height: "auto",
     width: "100%"
-  }
+  },
+  button: {
+    backgroundColor: "#ef914b",
+    color:'white',  }
 });
 
 class ModalDetails extends React.Component {
@@ -51,13 +54,13 @@ class ModalDetails extends React.Component {
         {this.props.value ? (
           <Button
             variant="contained"
-            color="secondary"
             onClick={this.handleOpen}
+            className={classes.button}
           >
             Valide ta réponse
           </Button>
         ) : (
-          <Button variant="contained" color="secondary" disabled>
+          <Button variant="contained" className={classes.button} disabled>
             Valide ta réponse
           </Button>
         )}
