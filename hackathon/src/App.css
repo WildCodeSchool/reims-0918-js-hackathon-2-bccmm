@@ -1,0 +1,14 @@
+button time[datetime="2019-02-11T00:00:00.000"],
+button time[datetime="2019-02-12T00:00:00.000"],
+button time[datetime="2019-02-13T00:00:00.000"],
+button time[datetime="2019-02-14T00:00:00.000"],
+button time[datetime="2019-02-15T00:00:00.000"] {
+  background: yellow;
+  padding: 10px;
+}
+
+.react-calendar button {
+  padding: 0;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
