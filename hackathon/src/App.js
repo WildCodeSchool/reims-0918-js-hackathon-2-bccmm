@@ -1,9 +1,12 @@
 import React, { Component } from "react";
-import Checkboxes from "./Components/Checkboxes";
 import "./App.css";
-import questionQuiz from "./API/questionQuiz";
+import QuizImp3D from "./Components/QuizImp3D";
 import Header from "./Header";
+<<<<<<< HEAD
 import Calendar from "./Components/Calendar";
+=======
+import HomePage from "./HomePage";
+>>>>>>> 2fff36c24fd9437ca92c8da983c587d1199c7592
 
 class App extends Component {
   constructor() {
@@ -25,6 +28,7 @@ class App extends Component {
     return (
       <div>
         <Header />
+<<<<<<< HEAD
         {questionQuiz.map((question, index) => (
           <Checkboxes {...question} key={index} />
         ))}
@@ -33,6 +37,9 @@ class App extends Component {
         {/* <Calendar value={[new Date(2019, 1, 18), new Date(2019, 1, 22)]} /> */}
         {/* <Calendar value={[new Date(2019, 3, 8), new Date(2019, 3, 12)]} />
         <Calendar value={[new Date(2019, 6, 8), new Date(2019, 6, 12)]} /> */}
+=======
+        <QuizImp3D />
+>>>>>>> 2fff36c24fd9437ca92c8da983c587d1199c7592
       </div>
     );
   }
