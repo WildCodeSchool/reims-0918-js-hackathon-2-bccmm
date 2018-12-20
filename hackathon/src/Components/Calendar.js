@@ -1,10 +1,10 @@
-import React, { Fragment } from "react";
-// import Calendar from "tui-calendar";
+import React, { Component } from "react";
+import moment from "moment";
 
-const CalendarPage = () => (
-  <Fragment>
-    <div />
-  </Fragment>
-);
+class Calendar extends Component {
+  render() {
+    return <div>Calendar</div>;
+  }
+}
 
-export default CalendarPage;
+export default Calendar;

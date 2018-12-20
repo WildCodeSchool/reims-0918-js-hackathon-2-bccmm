@@ -1,15 +1,16 @@
 import React, { Component } from "react";
 import Checkboxes from "./Components/Checkboxes";
-import Calendar from "react-calendar";
 import "./App.css";
 import questionQuiz from "./API/questionQuiz";
 import Header from "./Header";
+import Calendar from "./Components/Calendar";
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      date: new Date()
+      date: new Date(),
+      fake: new Date(2018, 1)
     };
   }
 
@@ -18,13 +19,20 @@ class App extends Component {
   };
 
   render() {
+    console.log(typeof this.state.date);
+    console.log(this.state.date);
+    console.log(this.state.fake);
     return (
       <div>
         <Header />
         {questionQuiz.map((question, index) => (
           <Checkboxes {...question} key={index} />
         ))}
-        <Calendar onChange={this.onChange} value={this.state.date} />
+        <Calendar />
+        {/* <Calendar value={[new Date(2019, 1, 11), new Date(2019, 1, 15)]} /> */}
+        {/* <Calendar value={[new Date(2019, 1, 18), new Date(2019, 1, 22)]} /> */}
+        {/* <Calendar value={[new Date(2019, 3, 8), new Date(2019, 3, 12)]} />
+        <Calendar value={[new Date(2019, 6, 8), new Date(2019, 6, 12)]} /> */}
       </div>
     );
   }
