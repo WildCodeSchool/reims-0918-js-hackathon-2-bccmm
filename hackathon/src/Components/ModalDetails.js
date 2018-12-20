@@ -59,11 +59,11 @@ class ModalDetails extends React.Component {
             onClick={this.handleOpen}
             className={classes.button}
           >
-            Valide ta réponse
+           <p>Valide ta réponse</p>
           </Button>
         ) : (
           <Button variant="contained" className={classes.button} disabled>
-            Valide ta réponse
+           <p>Valide ta réponse</p>
           </Button>
         )}
         <Modal
