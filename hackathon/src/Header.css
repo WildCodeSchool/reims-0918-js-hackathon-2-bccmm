@@ -70,20 +70,12 @@ span {
   animation-fill-mode: none, forwards;
 }
 
-.c:hover {
+.blue:hover {
   transform: rotateY(20deg) rotateZ(28deg) scale(1.2);
 }
 
-.m:hover {
+.orange:hover {
   transform: rotateY(-10deg) rotateZ(-20deg) scale(1.1);
-}
-
-.y:hover {
-  transform: rotateY(10deg) rotateZ(12deg) scale(1.3);
-}
-
-.k:hover {
-  transform: rotateY(-15deg) rotateZ(-15deg) scale(1.24);
 }
 
 @keyframes colorflash {
@@ -105,7 +97,7 @@ span {
   }
 }
 
-@keyframes underline-cyan {
+@keyframes underline-cyan{
   to {
     border-bottom-color: #ef914b;
   }
