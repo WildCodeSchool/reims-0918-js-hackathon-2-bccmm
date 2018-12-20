@@ -17,7 +17,8 @@ const styles = theme => ({
     margin: theme.spacing.unit * 3
   },
   group: {
-    margin: `${theme.spacing.unit}px 0`
+    margin: `${theme.spacing.unit}px 0`,
+    
   }
 });
 
