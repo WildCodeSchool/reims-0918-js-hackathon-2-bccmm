@@ -3,7 +3,6 @@ import "./App.css";
 import QuizImp3D from "./Components/QuizImp3D";
 import Header from "./Header";
 import QuizzButton from "./QuizzButton";
-import Workshop from "./Workshop";
 import QuizLaser from "./Components/QuizLaser";
 import QuizLightPainting from "./Components/QuizLightPainting";
 import QuizEscapeGames from "./Components/QuizEscapeGames";

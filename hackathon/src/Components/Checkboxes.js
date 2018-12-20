@@ -18,6 +18,11 @@ const styles = theme => ({
   },
   group: {
     margin: `${theme.spacing.unit}px 0`
+  },
+  question: {
+    color: "#EF914B",
+    fontWeight: "bold",
+    textAlign: "center"
   }
 });
 
@@ -48,7 +53,9 @@ class CheckBoxes extends Component {
     return (
       <div className={classes.root}>
         <FormControl component="fieldset" className={classes.formControl}>
-          <FormLabel component="legend">{this.props.question}</FormLabel>
+          <FormLabel component="legend" className={classes.question}>
+            {this.props.question}
+          </FormLabel>
           <RadioGroup
             aria-label="Question"
             name="Question"
