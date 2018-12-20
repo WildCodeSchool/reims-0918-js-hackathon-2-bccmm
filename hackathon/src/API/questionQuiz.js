@@ -169,20 +169,20 @@ export const questionQuizLightPainting = [
     question: "Qu'est ce que le light painting ?",
     answers: [
       {
-        type: { imageUrl: "", explication: "" },
+        type: { imageUrl: "https://cdn-files.cloud/wp-content/blogs.dir/66/files/2015/11/header-1.jpg", explication: "Le Lightpainting est une technique visuel" },
         content:
-          "https://s23527.pcdn.co/wp-content/uploads/2017/11/Screenshot-2017-11-17-11.21.02.jpg.optimal.jpg"
+          "on réalise des photos avec un appareil photo"
       },
 
       {
-        type: { imageUrl: "", explication: "" },
+        type: { imageUrl: "http://www.lightpainting-addict.com/img/cms/Tutos/A/LightPainting%20Tutorial%20-%20Light%20By%20Mishel%20Churkin%20O.jpg", explication: "La technique du light painting vous offre des possibilités créatives incroyables et infinies" },
         content:
-          "https://www.histoiresdetongs.com/wp-content/uploads/2018/03/light-painting-tutoriel.jpg"
+          "Le light painting est une technique photographique"
       },
       {
-        type: { imageUrl: "", explication: "" },
+        type: { imageUrl: "https://www.lightpainting-shop.com/419-large_default/fil-lumineux-blanc-2m-au-detail-effets-light-painting-fumee-et-flammes.jpg", explication: "Le light painting est une technique photo qui consiste à laisser son appareil photo dans l’obscurité pour peindre avec la lumière pendant une pose longue" },
         content:
-          "https://s23527.pcdn.co/wp-content/uploads/2017/11/Screenshot-2017-11-17-11.21.02.jpg.optimal.jpg "
+          "Peindre une photo avec de la lumière."
       }
     ]
   },
@@ -192,16 +192,16 @@ export const questionQuizLightPainting = [
       "Quels équipements sont primordiaux pour la pratique du light painting ?",
     answers: [
       {
-        type: { imageUrl: "", explication: "" },
+        type: { imageUrl: "https://www.ma-lampe-torche.com/wp-content/uploads/2017/06/lightpainting-intro.jpg", explication: "Lampes torches / bâtons pour la pratique du light painting" },
         content: "Lampes de poche"
       },
 
       {
-        type: { imageUrl: "", explication: "" },
+        type: { imageUrl: "https://www.histoiresdetongs.com/wp-content/uploads/2018/03/light-painting-tutoriel.jpg", explication: "Un appareil photo doté des modes de contrôle d'exposition Manuel et Pose longue pour pouvoir disposer de vitesses d'obturation longues" },
         content: "Appareil photo"
       },
       {
-        type: { imageUrl: "", explication: "" },
+        type: { imageUrl: "https://www.canon.fr/Images/paiting-with-light-simple-shot_tcm79-1347646.jpg", explication: "Un lieu ou une scène sombre" },
         content: "Une pièce sombre"
       }
     ]
@@ -212,16 +212,16 @@ export const questionQuizLightPainting = [
       "Quelles sont les méthodes utilisés pour faire du light painting ?",
     answers: [
       {
-        type: { imageUrl: "", explication: "" },
+        type: { imageUrl: "http://www.kiosq.sqy.fr/media/loisirs/light-painting/thumbnail.jpeg?time=1543403249", explication: "Afin de réaliser une photographie avec du light painting, il est nécessaire d’avoir un appareil photo sur lequel le temps de pose est modifiable, jusqu’à 30 secondes sur les reflex et hybrides" },
         content: "Image par image "
       },
 
       {
-        type: { imageUrl: "", explication: "" },
+        type: { imageUrl: "https://www.mnha.lu/themes/mnha/images/dbfiles/2758/large.jpg", explication: "" },
         content: "Montage vidéo "
       },
       {
-        type: { imageUrl: "", explication: "" },
+        type: { imageUrl: "http://www.saintex-reims.com/wp-content/uploads/2016/10/Light-Painting-Infinity.jpg", explication: "" },
         content: "Vidéo en temps réel"
       }
     ]
