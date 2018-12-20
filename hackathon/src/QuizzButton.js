@@ -119,7 +119,7 @@ const QuizzButton = props => {
       <Workshop />
       <div className={classes.root}>
         {images.map(image => (
-          <Grid item xs={6} key={image.title}>
+          <Grid item xs={12} sm={6} key={image.title}>
             <Link to={`${image.route}`}>
               <ButtonBase
                 focusRipple
