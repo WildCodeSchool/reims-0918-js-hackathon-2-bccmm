@@ -34,7 +34,7 @@ body {
   background-size: 25% 100%;
   background-repeat: repeat-X;
 } */
- .wrap {
+.wrap {
   position: relative;
   top: 20%;
   left: 50%;
@@ -54,7 +54,7 @@ span {
 }
 
 .blue {
-  text-shadow: -0.025em -0.025em 0 #005F82;
+  text-shadow: -0.025em -0.025em 0 #005f82;
   animation-duration: 0.3s, 0.2s;
   animation-delay: 0, 0.3s;
   animation-name: colorflash, underline-cyan;
@@ -62,14 +62,12 @@ span {
 }
 
 .orange {
-  text-shadow: 0.025em 0.025em 0 #EF914B;
+  text-shadow: 0.025em 0.025em 0 #ef914b;
   animation-duration: 0.3s, 0.2s;
   animation-delay: 0.3s, 0.5s;
   animation-name: colorflash, underline-magenta;
   animation-fill-mode: none, forwards;
 }
-
-
 
 .c:hover {
   transform: rotateY(20deg) rotateZ(28deg) scale(1.2);
@@ -89,38 +87,38 @@ span {
 
 @keyframes colorflash {
   0% {
-    color: #005F82;
+    color: #005f82;
     transform: translateY(-10%);
   }
   33% {
-    color: #EF914B;
+    color: #ef914b;
     transform: translateY(-5%);
   }
   66% {
-    color: #005F82;
+    color: #005f82;
     transform: translateY(5%);
   }
   100% {
-    color: #EF914B;
+    color: #ef914b;
     transform: translateY(0);
   }
 }
 
 @keyframes underline-cyan {
   to {
-    border-bottom-color: #EF914B;
+    border-bottom-color: #ef914b;
   }
 }
 
 @keyframes underline-yellow {
   to {
-    border-bottom-color: #005F82;
+    border-bottom-color: #005f82;
   }
 }
 
 @keyframes underline-magenta {
   to {
-    border-bottom-color: #005F82;
+    border-bottom-color: #005f82;
   }
 }
 
@@ -137,4 +135,14 @@ span {
   body::before {
     background-size: 50%;
   }
+}
+
+@font-face {
+  font-family: "The Northern Block - Cobol-Bold";
+  src: url("Fonts/The Northern Block - Cobol-Bold.otf");
+}
+
+h1 {
+  font-family: "The Northern Block - Cobol-Bold";
+  src: url("Fonts/The Northern Block - Cobol-Bold.otf");
 }
