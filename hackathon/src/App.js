@@ -13,6 +13,7 @@ class App extends Component {
     return (
       <div>
         <Header />
+        <HomePage />
         <QuizLaser />
         <QuizLightPainting />
         <QuizEscapeGames />
