@@ -6,20 +6,29 @@ import QuizLaser from "./Components/QuizLaser";
 import QuizLightPainting from "./Components/QuizLightPainting";
 import QuizEscapeGames from "./Components/QuizEscapeGames";
 import HomePage from "./HomePage";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 class App extends Component {
-  
   render() {
     return (
       <div>
         <Header />
-        <HomePage />
-        <QuizLaser />
+        <BrowserRouter>
+          <Switch>
+            <Route exact path="/" component={HomePage} />
+            <Route path="/QuizLaser" component={QuizLaser} />
+            <Route path="/QuizImp3D" component={QuizImp3D} />
+            <Route path="/QuizEscapeGame" component={QuizEscapeGames} />
+            <Route path="/QuizLightpainting" component={QuizLightPainting} />
+          </Switch>
+        </BrowserRouter>
+
+        {/* <QuizLaser />
         <QuizLightPainting />
         <QuizEscapeGames />
-        <QuizImp3D />
+        <QuizImp3D /> */}
       </div>
-    )
+    );
   }
 }
 
