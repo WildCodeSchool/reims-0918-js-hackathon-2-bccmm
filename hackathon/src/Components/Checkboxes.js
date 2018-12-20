@@ -17,7 +17,8 @@ const styles = theme => ({
     margin: theme.spacing.unit * 3
   },
   group: {
-    margin: `${theme.spacing.unit}px 0`
+    margin: `${theme.spacing.unit}px 0`,
+    
   },
   question: {
     color: "#EF914B",
@@ -52,36 +53,39 @@ class CheckBoxes extends Component {
 
     return (
       <div className={classes.root}>
-        <FormControl component="fieldset" className={classes.formControl}>
-          <FormLabel component="legend" className={classes.question}>
-            {this.props.question}
-          </FormLabel>
-          <RadioGroup
-            aria-label="Question"
-            name="Question"
-            className={classes.group}
-            value={this.state.value}
-            onChange={this.handleChange}
-          >
-            <FormControlLabel
-              value={this.props.answers[0].content}
-              control={<Radio />}
-              label={this.props.answers[0].content}
-            />
-            <FormControlLabel
-              value={this.props.answers[1].content}
-              control={<Radio />}
-              label={this.props.answers[1].content}
-            />
-            <FormControlLabel
-              value={this.props.answers[2].content}
-              control={<Radio />}
-              label={this.props.answers[2].content}
-            />
-          </RadioGroup>
+       
+          <FormControl component="fieldset" className={classes.formControl}>
+            <FormLabel component="legend" className={classes.question}>
+            <h2> {this.props.question}</h2>
+            </FormLabel>
+            
+            <RadioGroup
+              aria-label="Question"
+              name="Question"
+              className={classes.group}
+              value={this.state.value}
+              onChange={this.handleChange}
+            >
+              <FormControlLabel
+                value={this.props.answers[0].content}
+                control={<Radio />}
+                label={<h3>{this.props.answers[0].content}</h3>}
+              />
+              <FormControlLabel
+                value={this.props.answers[1].content}
+                control={<Radio />}
+                label={<h3>{this.props.answers[1].content}</h3>}
+              />
+              <FormControlLabel
+                value={this.props.answers[2].content}
+                control={<Radio />}
+                label={<h3>{this.props.answers[2].content}</h3>}
+              />
+            </RadioGroup>
 
-          <ModalDetails {...this.state} />
-        </FormControl>
+            <ModalDetails {...this.state} />
+          </FormControl>
+        
       </div>
     );
   }
@@ -90,6 +94,5 @@ class CheckBoxes extends Component {
 CheckBoxes.propTypes = {
   classes: PropTypes.object.isRequired
 };
-
 
 export default withStyles(styles)(CheckBoxes);
