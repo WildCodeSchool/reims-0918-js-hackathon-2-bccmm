@@ -3,7 +3,8 @@ import Checkboxes from "./Checkboxes";
 import { questionQuizImp3D } from "../API/questionQuiz";
 import Button from "@material-ui/core/Button";
 import { Link } from "react-router-dom";
-const QuizImp3D = () => {
+
+const QuizImp3D = props => {
   return (
     <div>
       {questionQuizImp3D.map((question, index) => (

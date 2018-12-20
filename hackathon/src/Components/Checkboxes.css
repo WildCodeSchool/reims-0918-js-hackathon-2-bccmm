@@ -10,7 +10,15 @@
   src: url("../Fonts/The Northern Block - Cobol-Bold.otf") !important;
 }
 
-.MuiRadio-colorSecondary-170.MuiRadio-checked-167 span {
-  color: #005f82;
+.MuiButtonBase-root-39 {
+  color: #005f82 !important;
 }
 
+.MuiRadio-checked-25 {
+  color: #ef914b !important;
+}
+
+.CheckBoxes-question-4 {
+  color: #ef914b !important;
+  text-decoration: underline #005f82;
+}
