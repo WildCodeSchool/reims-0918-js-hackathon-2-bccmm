@@ -3,12 +3,143 @@ button time[datetime="2019-02-12T00:00:00.000"],
 button time[datetime="2019-02-13T00:00:00.000"],
 button time[datetime="2019-02-14T00:00:00.000"],
 button time[datetime="2019-02-15T00:00:00.000"] {
-  background: yellow;
-  padding: 10px;
+  background-image: url("./Images/bleu.jpg");
+  background-size: 160px;
+  padding: 40px;
+}
+
+button time[datetime="2019-02-18T00:00:00.000"],
+button time[datetime="2019-02-19T00:00:00.000"],
+button time[datetime="2019-02-20T00:00:00.000"],
+button time[datetime="2019-02-21T00:00:00.000"],
+button time[datetime="2019-02-22T00:00:00.000"] {
+  background-image: url("./Images/orange.jpg");
+  background-size: 170px;
+  padding: 40px;
+}
+
+button time[datetime="2019-04-10T00:00:00.000"],
+button time[datetime="2019-04-11T00:00:00.000"],
+button time[datetime="2019-04-12T00:00:00.000"] {
+  background-image: url("./Images/bleu.jpg");
+  background-size: 170px;
+  padding: 40px;
+  padding: 40px;
+}
+
+button time[datetime="2019-04-08T00:00:00.000"],
+button time[datetime="2019-04-09T00:00:00.000"] {
+  background-image: url("./Images/bleu.jpg");
+  background-size: 160px;
+  padding: 40px;
+  padding: 47px;
+}
+
+button time[datetime="2019-04-15T00:00:00.000"],
+button time[datetime="2019-04-16T00:00:00.000"],
+button time[datetime="2019-04-17T00:00:00.000"],
+button time[datetime="2019-04-18T00:00:00.000"],
+button time[datetime="2019-04-19T00:00:00.000"] {
+  background-image: url("./Images/orange.jpg");
+  background-size: 170px;
+  padding: 40px;
+}
+
+button time[datetime="2019-07-10T00:00:00.000"],
+button time[datetime="2019-07-11T00:00:00.000"],
+button time[datetime="2019-07-12T00:00:00.000"] {
+  background-image: url("./Images/bleu.jpg");
+  background-size: 160px;
+  padding: 40px;
+}
+
+button time[datetime="2019-07-08T00:00:00.000"],
+button time[datetime="2019-07-09T00:00:00.000"] {
+  background-image: url("./Images/bleu.jpg");
+  background-size: 160px;
+  padding: 47px;
+}
+
+.react-calendar {
+  height: 570px;
+  min-width: 1000px;
+  font-size: 20px;
 }
 
 .react-calendar button {
-  padding: 0;
-  padding-bottom: 10px;
-  padding-top: 10px;
+  width: 85px;
+  height: 85px;
+  font-size: 20px;
+}
+
+.react-calendar__navigation {
+  height: 70px;
+  margin: 10px;
+}
+
+.calendar {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.legendary {
+  display: flex;
+  margin-top: 10px;
+  border: 1px solid #a0a096;
+  width: 1000px;
+  height: 300px;
+}
+
+.legendary button {
+  width: 50px;
+  height: 25px;
+}
+
+.atelier1 {
+  background-image: url("./Images/bleu.jpg");
+  background-size: 100px;
+  margin-top: -3px;
+  margin-bottom: 12px;
+}
+
+.atelier2 {
+  background-image: url("./Images/orange.jpg");
+  background-size: 110px;
+}
+
+.atelier3 {
+  background-image: url("./Images/bleu.jpg");
+  background-size: 100px;
+  margin-top: -20px;
+  margin-bottom: 15px;
+}
+
+.atelier4 {
+  background-image: url("./Images/orange.jpg");
+  background-size: 110px;
+}
+
+.atelier5 {
+  background-image: url("./Images/bleu.jpg");
+  background-size: 100px;
+  margin-top: -20px;
+}
+
+.vignettes {
+  display: block;
+  width: 200px;
+}
+
+.mois {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.mois :nth-child(1) {
+  margin-top: 25px;
+}
+
+.mois :nth-child(3) {
+  margin-top: 10px;
 }
