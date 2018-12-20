@@ -128,4 +128,63 @@ const questionQuizLaser = [
     ]
   },
 ];
-export default (questionQuiz,questionQuizLaser);
+const questionQuizLightPainting = [
+  {
+    id: 1,
+    question: "Qu'est ce que le light painting ?",
+    answers: [
+      {
+        type: { imageUrl: "", explication: "" },
+        content: "https://s23527.pcdn.co/wp-content/uploads/2017/11/Screenshot-2017-11-17-11.21.02.jpg.optimal.jpg"
+      },
+
+      {
+        type: { imageUrl: "", explication: "" },
+        content: "https://www.histoiresdetongs.com/wp-content/uploads/2018/03/light-painting-tutoriel.jpg"
+      },
+      {
+        type: { imageUrl: "", explication: "" },
+        content: "https://s23527.pcdn.co/wp-content/uploads/2017/11/Screenshot-2017-11-17-11.21.02.jpg.optimal.jpg "
+      }
+    ]
+  },
+  {
+    id: 2,
+    question: "Quels équipements sont primordiaux pour la pratique du light painting ?",
+    answers: [
+      {
+        type: { imageUrl: "", explication: "" },
+        content: "Lampes de poche"
+      },
+
+      {
+        type: { imageUrl: "", explication: "" },
+        content: "Appareil photo"
+      },
+      {
+        type: { imageUrl: "", explication: "" },
+        content: "Une pièce sombre"
+      }
+    ]
+  },
+  {
+    id: 3,
+    question: "Quelles sont les méthodes utilisés pour faire du light painting ?",
+    answers: [
+      {
+        type: { imageUrl: "", explication: "" },
+        content: "Image par image "
+      },
+
+      {
+        type: { imageUrl: "", explication: "" },
+        content: "Montage vidéo "
+      },
+      {
+        type: { imageUrl: "", explication: "" },
+        content: "Vidéo en temps réel"
+      }
+    ]
+  },
+];
+export default (questionQuiz,questionQuizLaser,questionQuizLightPainting);

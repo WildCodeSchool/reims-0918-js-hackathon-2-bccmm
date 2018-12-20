@@ -4,6 +4,7 @@ import "./App.css";
 import questionQuiz from "./API/questionQuiz";
 import Header from "./Header";
 import QuizLaser from "./Components/QuizLaser";
+import QuizLightPainting from "./Components/QuizLightPainting";
 
 class App extends Component {
   
@@ -12,6 +13,7 @@ class App extends Component {
       <div>
         <Header />
         <QuizLaser />
+        <QuizLightPainting />
       </div>
     )
   }
