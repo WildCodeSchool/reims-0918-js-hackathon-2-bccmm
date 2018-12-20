@@ -130,11 +130,10 @@ const HomePage = props => {
 
       <div className={classes.root}>
         {images.map(image => (
-          <Grid item xs={6}>
+          <Grid item xs={6} key={image.title}>
             <Link to={`${image.route}`}>
               <ButtonBase
                 focusRipple
-                key={image.title}
                 className={classes.image}
                 focusVisibleClassName={classes.focusVisible}
                 style={{
