@@ -3,6 +3,7 @@ import { withStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
 import ButtonBase from "@material-ui/core/ButtonBase";
 import Typography from "@material-ui/core/Typography";
+import { Link } from "react-router-dom";
 
 const styles = theme => ({
   root: {
@@ -91,19 +92,22 @@ const images = [
     url:
       "https://www.abf-escaliers.fr/wp-content/uploads/2017/10/decoupe-laser-slide-1600x1000-1024x640.jpg",
     title: "Découpe laser",
-    width: "50%"
+    width: "50%",
+    route: "/QuizLaser"
   },
   {
     url:
       "http://objectif-photographe.fr/wp-content/uploads/2013/11/lightpainting01.jpg",
     title: "Light painting",
-    width: "50%"
+    width: "50%",
+    route: "/QuizLightpainting"
   },
   {
     url:
       "https://france3-regions.francetvinfo.fr/bourgogne-franche-comte/sites/regions_france3/files/styles/top_big/public/assets/images/2018/04/25/live-escape-game-1155620_1920-3626707.jpg?itok=pT2h3Pta",
     title: "Escape game",
-    width: "50%"
+    width: "50%",
+    route: "/QuizEscapeGame"
   }
 ];
 
@@ -127,35 +131,37 @@ const HomePage = props => {
       <div className={classes.root}>
         {images.map(image => (
           <Grid item xs={6}>
-            <ButtonBase
-              focusRipple
-              key={image.title}
-              className={classes.image}
-              focusVisibleClassName={classes.focusVisible}
-              style={{
-                width: image.width,
-                margin: 50
-              }}
-            >
-              <span
-                className={classes.imageSrc}
+            <Link to={`${image.route}`}>
+              <ButtonBase
+                focusRipple
+                key={image.title}
+                className={classes.image}
+                focusVisibleClassName={classes.focusVisible}
                 style={{
-                  backgroundImage: `url(${image.url})`
+                  width: image.width,
+                  margin: 50
                 }}
-              />
-              <span className={classes.imageBackdrop} />
-              <span className={classes.imageButton}>
-                <Typography
-                  component="span"
-                  variant="title"
-                  color="inherit"
-                  className={classes.imageTitle}
-                >
-                  {image.title}
-                  <span className={classes.imageMarked} />
-                </Typography>
-              </span>
-            </ButtonBase>
+              >
+                <span
+                  className={classes.imageSrc}
+                  style={{
+                    backgroundImage: `url(${image.url})`
+                  }}
+                />
+                <span className={classes.imageBackdrop} />
+                <span className={classes.imageButton}>
+                  <Typography
+                    component="span"
+                    variant="title"
+                    color="inherit"
+                    className={classes.imageTitle}
+                  >
+                    {image.title}
+                    <span className={classes.imageMarked} />
+                  </Typography>
+                </span>
+              </ButtonBase>
+            </Link>
           </Grid>
         ))}
       </div>
