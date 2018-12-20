@@ -97,7 +97,7 @@ span {
   }
 }
 
-@keyframes underline-cyangit status {
+@keyframes underline-cyan{
   to {
     border-bottom-color: #ef914b;
   }
