@@ -13,7 +13,12 @@ const styles = {
     minWidth: 275,
     padding: "20px",
     marginRight: "50px",
-    marginLeft: "50px"
+    marginLeft: "50px",
+    borderRadius: "50px 20px",
+    boxShadow: "10px 10px 10px orange",
+    "&:hover": {
+      boxShadow: "10px 10px 10px #055F81"
+    }
   },
   title: {
     fontSize: "1rem",
@@ -23,11 +28,31 @@ const styles = {
     marginBottom: 12
   },
   WWW: {
+    display: "flex",
+    flexWrap: "wrap",
+    width: "100",
     backgroundColor: "#005F82",
     color: "white",
     minWidth: 275,
     padding: "20px",
-    marginRight: "20px"
+    marginRight: "20px",
+    borderRadius: "50px 20px",
+    boxShadow: "10px 10px 10px  #0077b3",
+    "&:hover": {
+      boxShadow: "10px 10px 10px #EE904C"
+    }
+  },
+  qui: {
+    display: "flex",
+    flexWrap: "wrap",
+    width: "100",
+    backgroundColor: "#005F82",
+    color: "white",
+    minWidth: 275,
+    padding: "20px",
+    marginRight: "20px",
+    borderRadius: "50px 20px",
+    boxShadow: "10px 10px 10px  #0077b3"
   },
   root: {
     display: "flex",
@@ -44,18 +69,20 @@ const Workshop = props => {
   const { classes } = props;
   return (
     <Grid container className={classes.root}>
-      <Grid item xs={8} className={classes.root}>
+      <Grid item xs={12} md={8} className={classes.root}>
         <Grid container>
-          <Grid item xs={12}>
-            <Card className={classes.workshop}>
-              <CardContent>
-                <Typography className={classes.title}>
-                  <h2>Vacancesdigitales</h2>
-                </Typography>
-              </CardContent>
-            </Card>
+          <Grid item xs={12} md={12}>
+            <a href="http://www.saintex-reims.com/">
+              <Card className={classes.workshop}>
+                <CardContent>
+                  <Typography className={classes.title}>
+                    <h2>Vacancesdigitales</h2>
+                  </Typography>
+                </CardContent>
+              </Card>
+            </a>
           </Grid>
-          <Grid item xs={6}>
+          <Grid item xs={12} md={6}>
             <h4>QUAND ?</h4>
             <Card className={classes.WWW}>
               <CardContent>
@@ -63,9 +90,9 @@ const Workshop = props => {
               </CardContent>
             </Card>
           </Grid>
-          <Grid item xs={6}>
+          <Grid item xs={12} md={6}>
             <h4>QUI ?</h4>
-            <Card className={classes.WWW}>
+            <Card className={classes.qui}>
               <CardContent>
                 <p>Pour les enfants, à partir de 7 ans.</p>
               </CardContent>
@@ -73,7 +100,7 @@ const Workshop = props => {
           </Grid>
         </Grid>
       </Grid>
-      <Grid item xs={4}>
+      <Grid item xs={12} md={4}>
         <h4>QUOI ?</h4>
         <Card className={classes.WWW}>
           <CardContent>
