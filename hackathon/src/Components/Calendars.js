@@ -43,14 +43,14 @@ class Calendars extends Component {
             <div>
               <div>
                 <p>
-                  11 au 15 Février 2019: CREATION JEU VIDEO CABANES POUR OISEAUX
-                  FRILEUX
+                  11 au 15 Février 2019: CREATION JEU VIDEO / CABANES POUR
+                  OISEAUX FRILEUX
                 </p>
               </div>
               <div>
                 <p>
-                  18 au 22 Février 2019: THEATRE & MEDIA JEUX DE POCHES EN BOIS
-                  LIGHT PAINTING
+                  18 au 22 Février 2019: THEATRE & MEDIA / JEUX DE POCHES EN
+                  BOIS / LIGHT PAINTING
                 </p>
               </div>
             </div>
@@ -60,15 +60,15 @@ class Calendars extends Component {
               </div>
               <div>
                 <p>
-                  15 au 19 Avril 2019: CIRCUIT DE BILLES GÉANTS CONSTRUCTION DE
-                  JEUX
+                  15 au 19 Avril 2019: CIRCUIT DE BILLES GÉANTS / CONSTRUCTION
+                  DE JEUX
                 </p>
               </div>
             </div>
             <div>
               <div>
                 <p>
-                  8 au 12 Juillet 2019: FIGURINE 3D SELFIE ET NUMÉRIQUE:
+                  8 au 12 Juillet 2019: FIGURINE 3D / SELFIE ET NUMÉRIQUE:
                   REDÉCOUVRIR LA PHOTOGRAPHIE
                 </p>
               </div>
