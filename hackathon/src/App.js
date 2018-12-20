@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./App.css";
 import QuizImp3D from "./Components/QuizImp3D";
 import Header from "./Header";
+import Calendars from "./Components/Calendars";
 import QuizzButton from "./QuizzButton";
 import QuizLaser from "./Components/QuizLaser";
 import QuizLightPainting from "./Components/QuizLightPainting";
@@ -13,6 +14,7 @@ class App extends Component {
     return (
       <div>
         <Header />
+        <Calendars />
         <BrowserRouter>
           <Switch>
             <Route exact path="/" component={QuizzButton} />
