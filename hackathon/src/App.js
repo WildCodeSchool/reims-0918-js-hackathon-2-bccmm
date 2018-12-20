@@ -1,17 +1,32 @@
 import React, { Component } from "react";
-import Checkboxes from "./Components/Checkboxes";
 import "./App.css";
-import questionQuiz from "./API/questionQuiz";
+import QuizImp3D from "./Components/QuizImp3D";
 import Header from "./Header";
+import QuizLaser from "./Components/QuizLaser";
+import QuizLightPainting from "./Components/QuizLightPainting";
+import QuizEscapeGames from "./Components/QuizEscapeGames";
+import HomePage from "./HomePage";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 class App extends Component {
   render() {
     return (
       <div>
         <Header />
-        {questionQuiz.map((question, index) => (
-          <Checkboxes {...question} key={index} />
-        ))}
+        <BrowserRouter>
+          <Switch>
+            <Route exact path="/" component={HomePage} />
+            <Route path="/QuizLaser" component={QuizLaser} />
+            <Route path="/QuizImp3D" component={QuizImp3D} />
+            <Route path="/QuizEscapeGame" component={QuizEscapeGames} />
+            <Route path="/QuizLightpainting" component={QuizLightPainting} />
+          </Switch>
+        </BrowserRouter>
+
+        {/* <QuizLaser />
+        <QuizLightPainting />
+        <QuizEscapeGames />
+        <QuizImp3D /> */}
       </div>
     );
   }
