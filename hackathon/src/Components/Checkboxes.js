@@ -3,10 +3,11 @@ import PropTypes from "prop-types";
 import { withStyles } from "@material-ui/core/styles";
 import Radio from "@material-ui/core/Radio";
 import RadioGroup from "@material-ui/core/RadioGroup";
-import Button from "@material-ui/core/Button";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 import FormControl from "@material-ui/core/FormControl";
 import FormLabel from "@material-ui/core/FormLabel";
+import ModalDetails from "./ModalDetails";
+import "./Checkboxes.css";
 
 const styles = theme => ({
   root: {
@@ -22,11 +23,23 @@ const styles = theme => ({
 
 class CheckBoxes extends Component {
   state = {
-    value: ""
+    value: "",
+    image: "",
+    description: ""
   };
 
   handleChange = event => {
-    this.setState({ value: event.target.value });
+    const answerSelect = this.props.answers.filter(
+      answer => event.target.value === answer.content
+    );
+    console.log(this.props.answers);
+    console.log(answerSelect);
+
+    this.setState({
+      image: answerSelect[0].type.imageUrl,
+      description: answerSelect[0].type.explication,
+      value: event.target.value
+    });
   };
 
   render() {
@@ -37,30 +50,30 @@ class CheckBoxes extends Component {
         <FormControl component="fieldset" className={classes.formControl}>
           <FormLabel component="legend">{this.props.question}</FormLabel>
           <RadioGroup
-            aria-label="Questions"
-            name="question1"
+            aria-label="Question"
+            name="Question"
             className={classes.group}
             value={this.state.value}
             onChange={this.handleChange}
           >
-            {this.props.answers.map((answer, index) => (
-              <FormControlLabel
-                value={answer.content}
-                control={<Radio />}
-                label={answer.content}
-                key={index}
-              />
-            ))}
+            <FormControlLabel
+              value={this.props.answers[0].content}
+              control={<Radio />}
+              label={this.props.answers[0].content}
+            />
+            <FormControlLabel
+              value={this.props.answers[1].content}
+              control={<Radio />}
+              label={this.props.answers[1].content}
+            />
+            <FormControlLabel
+              value={this.props.answers[2].content}
+              control={<Radio />}
+              label={this.props.answers[2].content}
+            />
           </RadioGroup>
-          {this.state.value.length !== 0 ? (
-            <Button variant="contained" color="secondary">
-              Valide ta réponse
-            </Button>
-          ) : (
-            <Button variant="contained" color="secondary" disabled>
-              Valide ta réponse
-            </Button>
-          )}
+
+          <ModalDetails {...this.state} />
         </FormControl>
       </div>
     );
