@@ -84,7 +84,8 @@ const images = [
   {
     url: "https://www.numerama.com/content/uploads/2016/10/3d-impression.jpg",
     title: "Impression 3D",
-    width: "50%"
+    width: "50%",
+    route: "/QuizImp3D"
   },
   {
     url:

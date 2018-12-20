@@ -104,7 +104,8 @@ export const questionQuizImp3D = [
 export const questionQuizLaser = [
   {
     id: 1,
-    question: "Cette machine coupe bois, plexiglas, médium et grave verre et cuir grâce à ?",
+    question:
+      "Cette machine coupe bois, plexiglas, médium et grave verre et cuir grâce à ?",
     answers: [
       {
         type: { imageUrl: "http://www.bourasseau-industrie.fr/files/bourasseau/galerie-photos/page%20paris/decoupe_laser_paris.jpg", explication: "La découpe laser est un procédé de fabrication qui consiste à découper la matière grâce à une grande quantité d'énergie générée par un laser et concentrée sur une très faible surface" },
@@ -142,7 +143,8 @@ export const questionQuizLaser = [
   },
   {
     id: 3,
-    question: "Quel gaz peut être ajouter a la zone de découpage pour en améliorer l'efficacité ?",
+    question:
+      "Quel gaz peut être ajouter a la zone de découpage pour en améliorer l'efficacité ?",
     answers: [
       {
         type: { imageUrl: "https://www.trumpf.com/filestorage/TRUMPF_Master/_processed_/b/c/csm_Lasers-applications-laser-metal-deposition-process_503350c0cd.jpg", explication: "Magnésium, titane & autres matériaux réactifs – argon (haute pression) " },
@@ -158,9 +160,8 @@ export const questionQuizLaser = [
         content: "CO2"
       }
     ]
-  },
+  }
 ];
-
 
 export const questionQuizLightPainting = [
   {
@@ -169,22 +170,26 @@ export const questionQuizLightPainting = [
     answers: [
       {
         type: { imageUrl: "", explication: "" },
-        content: "https://s23527.pcdn.co/wp-content/uploads/2017/11/Screenshot-2017-11-17-11.21.02.jpg.optimal.jpg"
+        content:
+          "https://s23527.pcdn.co/wp-content/uploads/2017/11/Screenshot-2017-11-17-11.21.02.jpg.optimal.jpg"
       },
 
       {
         type: { imageUrl: "", explication: "" },
-        content: "https://www.histoiresdetongs.com/wp-content/uploads/2018/03/light-painting-tutoriel.jpg"
+        content:
+          "https://www.histoiresdetongs.com/wp-content/uploads/2018/03/light-painting-tutoriel.jpg"
       },
       {
         type: { imageUrl: "", explication: "" },
-        content: "https://s23527.pcdn.co/wp-content/uploads/2017/11/Screenshot-2017-11-17-11.21.02.jpg.optimal.jpg "
+        content:
+          "https://s23527.pcdn.co/wp-content/uploads/2017/11/Screenshot-2017-11-17-11.21.02.jpg.optimal.jpg "
       }
     ]
   },
   {
     id: 2,
-    question: "Quels équipements sont primordiaux pour la pratique du light painting ?",
+    question:
+      "Quels équipements sont primordiaux pour la pratique du light painting ?",
     answers: [
       {
         type: { imageUrl: "", explication: "" },
@@ -203,7 +208,8 @@ export const questionQuizLightPainting = [
   },
   {
     id: 3,
-    question: "Quelles sont les méthodes utilisés pour faire du light painting ?",
+    question:
+      "Quelles sont les méthodes utilisés pour faire du light painting ?",
     answers: [
       {
         type: { imageUrl: "", explication: "" },
@@ -219,7 +225,7 @@ export const questionQuizLightPainting = [
         content: "Vidéo en temps réel"
       }
     ]
-  },
+  }
 ];
 export const questionQuizEscapeGames = [
   {
@@ -278,8 +284,5 @@ export const questionQuizEscapeGames = [
         content: "Maquiller les participants et les déguiser pour rendre l’aventure encore plus réaliste"
       }
     ]
-  },
-  
+  }
 ];
-
-
