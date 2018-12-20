@@ -15,6 +15,7 @@ const styles = theme => ({
     textAlign: "center"
   },
   image: {
+    borderRadius: "50px 20px",
     position: "relative",
     height: 200,
     [theme.breakpoints.down("xs")]: {
@@ -36,6 +37,7 @@ const styles = theme => ({
   },
   focusVisible: {},
   imageButton: {
+    borderRadius: "50px 20px",
     position: "absolute",
     left: 0,
     right: 0,
@@ -47,6 +49,7 @@ const styles = theme => ({
     color: theme.palette.common.white
   },
   imageSrc: {
+    borderRadius: "50px 20px",
     position: "absolute",
     left: 0,
     right: 0,
@@ -56,6 +59,8 @@ const styles = theme => ({
     backgroundPosition: "center 40%"
   },
   imageBackdrop: {
+    borderRadius: "50px 20px",
+    boxShadow: "10px 10px 5px black",
     position: "absolute",
     left: 0,
     right: 0,
@@ -119,7 +124,7 @@ const QuizzButton = props => {
       <Workshop />
       <div className={classes.root}>
         {images.map(image => (
-          <Grid item xs={6} key={image.title}>
+          <Grid item xs={12} sm={6} key={image.title}>
             <Link to={`${image.route}`}>
               <ButtonBase
                 focusRipple
