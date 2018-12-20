@@ -21,8 +21,9 @@ const styles = {
     }
   },
   title: {
-    fontSize: "1rem",
-    color: "white"
+    fontSize: "1.5rem",
+    color: "white",
+    fontWeight: "bold"
   },
   pos: {
     marginBottom: 12
