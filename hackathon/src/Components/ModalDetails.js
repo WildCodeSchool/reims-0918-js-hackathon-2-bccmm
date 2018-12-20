@@ -4,6 +4,7 @@ import { withStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
 import Modal from "@material-ui/core/Modal";
 import Button from "@material-ui/core/Button";
+import "./ModalDetails.css"
 
 function getModalStyle() {
   const top = 50;
@@ -71,7 +72,7 @@ class ModalDetails extends React.Component {
           onClose={this.handleClose}
         >
           <div style={getModalStyle()} className={classes.paper}>
-            <Typography variant="h6" id="modal-title">
+            <Typography variant="h6" id="modal-title" classname="h6">
               {this.props.description}
             </Typography>
             <img className={classes.img} src={this.props.image} />

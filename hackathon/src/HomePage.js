@@ -3,6 +3,8 @@ import { withStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
 import ButtonBase from "@material-ui/core/ButtonBase";
 import Typography from "@material-ui/core/Typography";
+import { Link, withRouter } from "react-router-dom";
+
 
 const styles = theme => ({
   root: {
@@ -83,8 +85,9 @@ const styles = theme => ({
 const images = [
   {
     url: "https://www.numerama.com/content/uploads/2016/10/3d-impression.jpg",
-    title: "Impression 3D",
-    width: "50%"
+    title: "Impression3D",
+    width: "50%",
+    route: "/QuizImp3D"
   },
   {
     url:
@@ -124,8 +127,10 @@ const HomePage = props => {
       <p>A chaque fois un nouveau thème et des surprises !</p>
 
       <div className={classes.root}>
+      
         {images.map(image => (
           <Grid item xs={6}>
+           <Link to={`${image.route}`}> 
             <ButtonBase
               focusRipple
               key={image.title}
@@ -155,6 +160,7 @@ const HomePage = props => {
                 </Typography>
               </span>
             </ButtonBase>
+            </Link>
           </Grid>
         ))}
       </div>
@@ -163,3 +169,4 @@ const HomePage = props => {
 };
 
 export default withStyles(styles)(HomePage);
+

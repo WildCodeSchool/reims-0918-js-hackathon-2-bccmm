@@ -12,7 +12,10 @@
     "material-ui-pickers": "^2.0.4",
     "react": "^16.6.3",
     "react-calendar": "^2.17.5",
+    "prop-types": "^15.6.2",
+    "react-checkbox-group": "^4.0.1",
     "react-dom": "^16.6.3",
+    "react-router-dom": "^4.3.1",
     "react-scripts": "2.1.1"
   },
   "scripts": {

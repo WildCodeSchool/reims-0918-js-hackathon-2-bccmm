@@ -4,6 +4,11 @@ import QuizImp3D from "./Components/QuizImp3D";
 import Header from "./Header";
 import Calendar from "react-calendar";
 // import HomePage from "./HomePage";
+import QuizLaser from "./Components/QuizLaser";
+import QuizLightPainting from "./Components/QuizLightPainting";
+import QuizEscapeGames from "./Components/QuizEscapeGames";
+import HomePage from "./HomePage";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 class App extends Component {
   constructor() {
@@ -19,6 +24,20 @@ class App extends Component {
         <Header />
         <Calendar className="class" activeStartDate={this.state.date} />
         <QuizImp3D />
+        <BrowserRouter>
+          <Switch>
+            <Route exact path="/" component={HomePage} />
+            <Route path="/QuizLaser" component={QuizLaser} />
+            <Route path="/QuizImp3D" component={QuizImp3D} />
+            <Route path="/QuizEscapeGame" component={QuizEscapeGames} />
+            <Route path="/QuizLightpainting" component={QuizLightPainting} />
+          </Switch>
+        </BrowserRouter>
+
+        {/* <QuizLaser />
+        <QuizLightPainting />
+        <QuizEscapeGames />
+        <QuizImp3D /> */}
       </div>
     );
   }
