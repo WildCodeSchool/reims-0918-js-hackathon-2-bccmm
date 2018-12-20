@@ -104,7 +104,8 @@ export const questionQuizImp3D = [
 export const questionQuizLaser = [
   {
     id: 1,
-    question: "Cette machine coupe bois, plexiglas, médium et grave verre et cuir grâce à ?",
+    question:
+      "Cette machine coupe bois, plexiglas, médium et grave verre et cuir grâce à ?",
     answers: [
       {
         type: { imageUrl: "", explication: "" },
@@ -142,7 +143,8 @@ export const questionQuizLaser = [
   },
   {
     id: 3,
-    question: "Quel gaz peut être ajouter a la zone de découpage pour en améliorer l'efficacité ?",
+    question:
+      "Quel gaz peut être ajouter a la zone de découpage pour en améliorer l'efficacité ?",
     answers: [
       {
         type: { imageUrl: "", explication: "" },
@@ -158,9 +160,8 @@ export const questionQuizLaser = [
         content: "CO2"
       }
     ]
-  },
+  }
 ];
-
 
 export const questionQuizLightPainting = [
   {
@@ -169,22 +170,26 @@ export const questionQuizLightPainting = [
     answers: [
       {
         type: { imageUrl: "", explication: "" },
-        content: "https://s23527.pcdn.co/wp-content/uploads/2017/11/Screenshot-2017-11-17-11.21.02.jpg.optimal.jpg"
+        content:
+          "https://s23527.pcdn.co/wp-content/uploads/2017/11/Screenshot-2017-11-17-11.21.02.jpg.optimal.jpg"
       },
 
       {
         type: { imageUrl: "", explication: "" },
-        content: "https://www.histoiresdetongs.com/wp-content/uploads/2018/03/light-painting-tutoriel.jpg"
+        content:
+          "https://www.histoiresdetongs.com/wp-content/uploads/2018/03/light-painting-tutoriel.jpg"
       },
       {
         type: { imageUrl: "", explication: "" },
-        content: "https://s23527.pcdn.co/wp-content/uploads/2017/11/Screenshot-2017-11-17-11.21.02.jpg.optimal.jpg "
+        content:
+          "https://s23527.pcdn.co/wp-content/uploads/2017/11/Screenshot-2017-11-17-11.21.02.jpg.optimal.jpg "
       }
     ]
   },
   {
     id: 2,
-    question: "Quels équipements sont primordiaux pour la pratique du light painting ?",
+    question:
+      "Quels équipements sont primordiaux pour la pratique du light painting ?",
     answers: [
       {
         type: { imageUrl: "", explication: "" },
@@ -203,7 +208,8 @@ export const questionQuizLightPainting = [
   },
   {
     id: 3,
-    question: "Quelles sont les méthodes utilisés pour faire du light painting ?",
+    question:
+      "Quelles sont les méthodes utilisés pour faire du light painting ?",
     answers: [
       {
         type: { imageUrl: "", explication: "" },
@@ -219,7 +225,7 @@ export const questionQuizLightPainting = [
         content: "Vidéo en temps réel"
       }
     ]
-  },
+  }
 ];
 export const questionQuizEscapeGames = [
   {
@@ -237,7 +243,8 @@ export const questionQuizEscapeGames = [
       },
       {
         type: { imageUrl: "", explication: "" },
-        content: "Les participants doivent tenter de sortir en moins de 60 minutes ?"
+        content:
+          "Les participants doivent tenter de sortir en moins de 60 minutes ?"
       }
     ]
   },
@@ -247,16 +254,19 @@ export const questionQuizEscapeGames = [
     answers: [
       {
         type: { imageUrl: "", explication: "" },
-        content: "Varier le type d’énigme : codes avec chiffres / codes avec lettres "
+        content:
+          "Varier le type d’énigme : codes avec chiffres / codes avec lettres "
       },
 
       {
         type: { imageUrl: "", explication: "" },
-        content: "Cacher les éléments : les énigmes doivent être cachés, mais pas trop"
+        content:
+          "Cacher les éléments : les énigmes doivent être cachés, mais pas trop"
       },
       {
         type: { imageUrl: "", explication: "" },
-        content: "Le nombre d’énigmes à proposer dépend du nombre de participants, du temps disponible, de leur complexité"
+        content:
+          "Le nombre d’énigmes à proposer dépend du nombre de participants, du temps disponible, de leur complexité"
       }
     ]
   },
@@ -271,15 +281,14 @@ export const questionQuizEscapeGames = [
 
       {
         type: { imageUrl: "", explication: "" },
-        content: "L’éclairage (ou l’absence d’éclairage) contribue à l’ambiance."
+        content:
+          "L’éclairage (ou l’absence d’éclairage) contribue à l’ambiance."
       },
       {
         type: { imageUrl: "", explication: "" },
-        content: "Maquiller les participants et les déguiser pour rendre l’aventure encore plus réaliste"
+        content:
+          "Maquiller les participants et les déguiser pour rendre l’aventure encore plus réaliste"
       }
     ]
-  },
-  
+  }
 ];
-
-
