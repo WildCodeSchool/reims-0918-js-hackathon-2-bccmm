@@ -4,14 +4,14 @@ import "./Header.css";
 const Header = () => (
   <div className="wrap">
     <h1 id="cmyk">
-      <span class="c">S</span>
-      <span class="m">A</span>
-      <span class="y">I</span>
-      <span class="k">N</span>
-      <span class="c">T</span>
-      <span class="m">-</span>
-      <span class="y">E</span>
-      <span class="k">X</span>
+      <span className="c">S</span>
+      <span className="m">A</span>
+      <span className="y">I</span>
+      <span className="k">N</span>
+      <span className="c">T</span>
+      <span className="m">-</span>
+      <span className="y">E</span>
+      <span className="k">X</span>
     </h1>
   </div>
 );
