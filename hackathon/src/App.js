@@ -1,11 +1,11 @@
 import React, { Component } from "react";
-import Checkboxes from "./Components/Checkboxes";
 import "./App.css";
-import questionQuiz from "./API/questionQuiz";
+import QuizImp3D from "./Components/QuizImp3D";
 import Header from "./Header";
 import QuizLaser from "./Components/QuizLaser";
 import QuizLightPainting from "./Components/QuizLightPainting";
 import QuizEscapeGames from "./Components/QuizEscapeGames";
+import HomePage from "./HomePage";
 
 class App extends Component {
   
@@ -16,6 +16,7 @@ class App extends Component {
         <QuizLaser />
         <QuizLightPainting />
         <QuizEscapeGames />
+        <QuizImp3D />
       </div>
     )
   }
