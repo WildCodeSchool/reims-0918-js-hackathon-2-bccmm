@@ -91,19 +91,22 @@ const images = [
     url:
       "https://www.abf-escaliers.fr/wp-content/uploads/2017/10/decoupe-laser-slide-1600x1000-1024x640.jpg",
     title: "Découpe laser",
-    width: "50%"
+    width: "50%",
+    route: "/QuizLaser"
   },
   {
     url:
       "http://objectif-photographe.fr/wp-content/uploads/2013/11/lightpainting01.jpg",
     title: "Light painting",
-    width: "50%"
+    width: "50%",
+    route: "/QuizLightpainting"
   },
   {
     url:
       "https://france3-regions.francetvinfo.fr/bourgogne-franche-comte/sites/regions_france3/files/styles/top_big/public/assets/images/2018/04/25/live-escape-game-1155620_1920-3626707.jpg?itok=pT2h3Pta",
     title: "Escape game",
-    width: "50%"
+    width: "50%",
+    route: "/QuizEscapeGame"
   }
 ];
 
