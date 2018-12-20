@@ -4,7 +4,7 @@ import { withStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
 import Modal from "@material-ui/core/Modal";
 import Button from "@material-ui/core/Button";
-import "./ModalDetails.css"
+import "./ModalDetails.css";
 
 function getModalStyle() {
   const top = 50;
@@ -31,7 +31,8 @@ const styles = theme => ({
   },
   button: {
     backgroundColor: "#ef914b",
-    color:'white',  }
+    color: "white"
+  }
 });
 
 class ModalDetails extends React.Component {
@@ -75,7 +76,11 @@ class ModalDetails extends React.Component {
             <Typography variant="h6" id="modal-title" classname="h6">
               {this.props.description}
             </Typography>
-            <img className={classes.img} src={this.props.image} />
+            <img
+              className={classes.img}
+              src={this.props.image}
+              alt="pictureModal"
+            />
           </div>
         </Modal>
       </div>
