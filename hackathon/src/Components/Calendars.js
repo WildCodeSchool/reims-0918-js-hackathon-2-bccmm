@@ -45,7 +45,7 @@ class Calendars extends Component {
     const { classes } = this.props;
     return (
       <Grid container>
-       <img
+        <img
           src="http://www.saintex-reims.com/wp-content/themes/wpbootstrap/logo-stex-web.svg"
           style={{
             position: "absolute",
@@ -55,6 +55,7 @@ class Calendars extends Component {
             backgroundColor: "#EF914B",
             borderRadius: "35px 13px"
           }}
+          alt="logo"
         />
         <Grid item xs={12} md={2} className={classes.bandeleft} />
         <Grid item xs={12} md={8} className={classes.text}>
