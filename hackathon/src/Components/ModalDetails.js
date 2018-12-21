@@ -23,7 +23,10 @@ const styles = theme => ({
     width: theme.spacing.unit * 50,
     backgroundColor: theme.palette.background.paper,
     boxShadow: theme.shadows[5],
-    padding: theme.spacing.unit * 4
+    padding: theme.spacing.unit * 4,
+    border: "2px solid #005f82",
+   outline: "2px solid #ef914b"
+
   },
   img: {
     height: "auto",
@@ -37,7 +40,7 @@ const styles = theme => ({
   title: {
     fontSize: "46px",
     color: "#005f82"
-  }
+  },
 });
 
 class ModalDetails extends React.Component {
