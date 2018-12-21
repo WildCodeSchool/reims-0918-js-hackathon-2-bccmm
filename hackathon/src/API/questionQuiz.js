@@ -401,7 +401,7 @@ export const questionQuizEscapeGames = [
       {
         type: {
           imageUrl:
-            "https://www.grizette.com/wp-content/uploads/2018/07/EscapeGame%C2%A9skryptic-kgb.jpg",
+            "https://img.grouponcdn.com/deal/23BRDPDafWNDFQhvta4qjpBbFpkh/23-700x420/v1/c700x420.jpg",
           explication:
             "Il faut jouez avec l’éclairage. Un grand classique, la lumière « noire », des UV. Voire même des lasers"
         },
