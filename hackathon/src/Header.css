@@ -57,16 +57,16 @@ span {
 
 .blue {
   text-shadow: -0.025em -0.025em 0 #005f82;
-  animation-duration: 0.3s, 0.2s;
-  animation-delay: 0, 0.3s;
+  animation-duration: 0.4s, 0.3s;
+  animation-delay: 0, 0.4s;
   animation-name: colorflash, underline-cyan;
   animation-fill-mode: none, forwards;
 }
 
 .orange {
   text-shadow: 0.025em 0.025em 0 #ef914b;
-  animation-duration: 0.3s, 0.2s;
-  animation-delay: 0.3s, 0.5s;
+  animation-duration: 0.4s, 0.3s;
+  animation-delay: 0.4s, 0.6s;
   animation-name: colorflash, underline-magenta;
   animation-fill-mode: none, forwards;
 }
@@ -98,7 +98,7 @@ span {
   }
 }
 
-@keyframes underline-cyan{
+@keyframes underline-cyan {
   to {
     border-bottom-color: #ef914b;
   }
