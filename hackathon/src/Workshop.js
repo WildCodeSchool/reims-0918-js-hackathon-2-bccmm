@@ -86,11 +86,12 @@ const Workshop = props => {
       <Grid item xs={12} md={8} className={classes.root}>
         <Grid container>
           <Grid item xs={12} md={12}>
-            <a href="http://www.saintex-reims.com/">
+            <a href="http://www.saintex-reims.com/2018/11/vacancesdigitales-12/">
               <Card className={classes.workshop}>
                 <CardContent>
                   <Typography className={classes.title}>
                     <h2>Vacancesdigitales</h2>
+                    <p className="qqq">En savoir plus...</p>
                   </Typography>
                 </CardContent>
               </Card>
@@ -98,21 +99,15 @@ const Workshop = props => {
           </Grid>
           <Grid item xs={12} md={6}>
             <h4>QUAND ?</h4>
-<<<<<<< HEAD
-            <Link to="/Calendars">
+            <Link to="/Calendar">
               <Card className={classes.quand}>
                 <CardContent>
-                  <p>Pendant la période des vacances scolaires.</p>
+                  <p className="qqq">
+                    Pendant la période des vacances scolaires.
+                  </p>
                 </CardContent>
               </Card>
             </Link>
-=======
-            <Card className={classes.WWW}>
-              <CardContent>
-                <p className="qqq">Pendant la période des vacances scolaires.</p>
-              </CardContent>
-            </Card>
->>>>>>> dev
           </Grid>
           <Grid item xs={12} md={6}>
             <h4>QUI ?</h4>
@@ -133,7 +128,9 @@ const Workshop = props => {
               nouveaux outils assistés par ordinateur.
             </p>
             <br />
-            <p className="qqq">A chaque fois un nouveau thème et des surprises !</p>
+            <p className="qqq">
+              A chaque fois un nouveau thème et des surprises !
+            </p>
           </CardContent>
         </Card>
       </Grid>

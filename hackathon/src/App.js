@@ -21,7 +21,7 @@ class App extends Component {
             <Route path="/QuizImp3D" component={QuizImp3D} />
             <Route path="/QuizEscapeGame" component={QuizEscapeGames} />
             <Route path="/QuizLightpainting" component={QuizLightPainting} />
-            <Route path="/Calendars" component={Calendars} />
+            <Route path="/Calendar" component={Calendars} />
           </Switch>
         </BrowserRouter>
       </div>
