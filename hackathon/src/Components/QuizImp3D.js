@@ -33,20 +33,27 @@ const QuizImp3D = props => {
   return (
     <div id="title">
       <Grid container>
-      <img
-      src="http://www.saintex-reims.com/wp-content/themes/wpbootstrap/logo-stex-web.svg"
-      style={{
-        position: "absolute",
-        height: "80px",
-        left: "50px",
-        top: "380px",
-        backgroundColor :"#EF914B",
-        borderRadius: "35px 13px"
-      }}/>
+        <img
+          src="http://www.saintex-reims.com/wp-content/themes/wpbootstrap/logo-stex-web.svg"
+          style={{
+            position: "absolute",
+            height: "80px",
+            left: "50px",
+            top: "380px",
+            backgroundColor: "#EF914B",
+            borderRadius: "35px 13px"
+          }}
+        />
         <Grid item xs={12} md={2} className={classes.bandeleft} />
         <Grid item xs={12} md={8} className={classes.text}>
           <h2>
-            <a href="https://www.youtube.com/watch?v=5lzb_Pf6NUI">
+            <a
+              style={{
+                border: "1px solid #005F82",
+                color: "black"
+              }}
+              href="https://www.youtube.com/watch?v=5lzb_Pf6NUI"
+            >
               L'imprimante 3D
             </a>
           </h2>
@@ -59,8 +66,21 @@ const QuizImp3D = props => {
       <Grid container>
         <Grid items xs={12} md={2} className={classes.bandeleft} />
         <Grid items xs={12} md={3} />
-        <Grid items xs={12} md={3}>
-          <a href="#title">
+        <Grid
+          items
+          xs={12}
+          md={3}
+          style={{
+            textAlign: "center"
+          }}
+        >
+          <a
+            style={{
+              border: "1px solid #005F82",
+              color: "black"
+            }}
+            href="#title"
+          >
             Pour voir une vidéo sur l'impression 3D clique sur le titre en haut
             !
           </a>
