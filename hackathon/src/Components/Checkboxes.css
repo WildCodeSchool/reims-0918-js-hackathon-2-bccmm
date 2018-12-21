@@ -1,5 +1,3 @@
-
-
 .CheckBoxes-root-144 .MuiFormLabel-root-151,
 .MuiFormGroup-root-158 span,
 .MuiButton-label-194 {
@@ -18,12 +16,20 @@
 .CheckBoxes-question-4 {
   color: #ef914b !important;
 }
+.MuiRadio-colorSecondary-132.MuiRadio-checked-129 {
+  color: #ef914b !important;
+}
+
+.MuiFormLabel-root-113 {
+  color: #ef914b !important;
+}
 
 @font-face {
   font-family: "The Northern Block - Cobol-Bold";
   src: url("/..Fonts/The Northern Block - Cobol-Bold.otf");
 }
 
-h2, h3 {
+h2,
+h3 {
   font-family: "The Northern Block - Cobol-Bold";
 }

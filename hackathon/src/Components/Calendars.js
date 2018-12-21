@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import Calendar from "react-calendar";
 import Grid from "@material-ui/core/Grid";
 import { withStyles } from "@material-ui/core/styles";
+import { Link } from "react-router-dom";
+import Button from "@material-ui/core/Button";
 import "./Calendars.css";
 
 const styles = {
@@ -10,6 +12,12 @@ const styles = {
   },
   bandeleft: {
     backgroundColor: "#005F82"
+  },
+  buttonback: {
+    backgroundColor: "#EF914B",
+    color: "white",
+    marginLeft: "15px",
+    marginTop: "5px"
   }
 };
 
@@ -90,6 +98,11 @@ class Calendars extends Component {
                 </div>
               </div>
             </div>
+            <Link to="/">
+              <Button variant="contained" className={classes.buttonback}>
+                Retour à l'accueil
+              </Button>
+            </Link>
           </div>
         </Grid>
         <Grid items xs={12} md={2} className={classes.banderight} />
