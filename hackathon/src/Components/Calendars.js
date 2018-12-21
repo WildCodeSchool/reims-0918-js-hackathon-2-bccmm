@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import Calendar from "react-calendar";
 import Grid from "@material-ui/core/Grid";
 import { withStyles } from "@material-ui/core/styles";
+import { Link } from "react-router-dom";
+import Button from "@material-ui/core/Button";
 import "./Calendars.css";
 
 const styles = {
@@ -10,6 +12,12 @@ const styles = {
   },
   bandeleft: {
     backgroundColor: "#005F82"
+  },
+  buttonback: {
+    backgroundColor: "#EF914B",
+    color: "white",
+    marginLeft: "15px",
+    marginTop: "5px"
   }
 };
 
@@ -37,6 +45,17 @@ class Calendars extends Component {
     const { classes } = this.props;
     return (
       <Grid container>
+       <img
+          src="http://www.saintex-reims.com/wp-content/themes/wpbootstrap/logo-stex-web.svg"
+          style={{
+            position: "absolute",
+            height: "80px",
+            left: "50px",
+            top: "380px",
+            backgroundColor: "#EF914B",
+            borderRadius: "35px 13px"
+          }}
+        />
         <Grid item xs={12} md={2} className={classes.bandeleft} />
         <Grid item xs={12} md={8} className={classes.text}>
           <div className="calendar">
@@ -90,6 +109,11 @@ class Calendars extends Component {
                 </div>
               </div>
             </div>
+            <Link to="/">
+              <Button variant="contained" className={classes.buttonback}>
+                Retour à l'accueil
+              </Button>
+            </Link>
           </div>
         </Grid>
         <Grid items xs={12} md={2} className={classes.banderight} />

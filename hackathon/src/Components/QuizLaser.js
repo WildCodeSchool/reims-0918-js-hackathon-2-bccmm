@@ -38,6 +38,17 @@ const QuizLaser = props => {
       }}
     >
       <Grid container>
+        <img
+          src="http://www.saintex-reims.com/wp-content/themes/wpbootstrap/logo-stex-web.svg"
+          style={{
+            position: "absolute",
+            height: "80px",
+            left: "50px",
+            top: "380px",
+            backgroundColor: "#EF914B",
+            borderRadius: "35px 13px"
+          }}
+        />
         <Grid item xs={12} md={2} className={classes.bandeleft} />
         <Grid item xs={12} md={8} className={classes.text}>
           <h2>
