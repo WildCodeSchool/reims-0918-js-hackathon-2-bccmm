@@ -11,16 +11,24 @@ import "./Checkboxes.css";
 
 const styles = theme => ({
   root: {
-    display: "flex"
+    display: "flex",
+    background: "rgba(0, 0, 0, 0.12)",
+    margin: "30px",
+    border: "2px solid #005f82",
+    borderRadius: "50px 20px",
+    width: "65%",
+    marginLeft: "17.5%"
   },
   formControl: {
-    margin: theme.spacing.unit * 3
+    margin: theme.spacing.unit * 3,
+    width: "100%"
   },
   group: {
-    margin: `${theme.spacing.unit}px 0`
+    margin: `${theme.spacing.unit}px 0`,
+    marginTop: "35px",
+    marginLeft: "20px"
   },
   question: {
-    color: "#EF914B",
     fontWeight: "bold",
     textAlign: "center"
   }

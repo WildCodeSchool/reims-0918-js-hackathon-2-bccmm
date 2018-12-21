@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 const QuizEscapeGames = () => {
   return (
     <div>
+      <h2>Les Escape Games</h2>
       {questionQuizEscapeGames.map((question, index) => (
         <Checkboxes {...question} key={index} />
       ))}
