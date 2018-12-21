@@ -1,7 +1,12 @@
 h4 {
   color: white;
   font-family: "The Northern Block - Cobol-Bold";
+}
 
+h5 {
+  color: #ef914b;
+  font-size: 140%;
+  font-family: "The Northern Block - Cobol-Bold";
 }
 
 a {
@@ -15,5 +20,5 @@ a {
 
 .qqq {
   font-family: "The Northern Block - Cobol-Bold";
-  font-size: 20px
+  font-size: 20px;
 }
