@@ -259,7 +259,7 @@ export const questionQuizLightPainting = [
       {
         type: {
           imageUrl:
-            "https://www.histoiresdetongs.com/wp-content/uploads/2018/03/light-painting-tutoriel.jpg",
+            "http://www.virusphoto.com/imagehosting/5734715d859cae7e.jpg",
           explication:
             "L'appareil photo est indispensable, c'est le support qui te permettra de capter la lumière"
         },
