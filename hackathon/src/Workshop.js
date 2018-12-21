@@ -110,7 +110,7 @@ const Workshop = props => {
               nouveaux outils assistés par ordinateur.
             </p>
             <br />
-            <p>A chaque fois un nouveau thème et des surprises !</p>
+            <p className="qqq">A chaque fois un nouveau thème et des surprises !</p>
           </CardContent>
         </Card>
       </Grid>

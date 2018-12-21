@@ -149,7 +149,7 @@ const QuizzButton = props => {
                     color="inherit"
                     className={classes.imageTitle}
                   >
-                    {image.title}
+                    <h4>{image.title}</h4>
                     <span className={classes.imageMarked} />
                   </Typography>
                 </span>

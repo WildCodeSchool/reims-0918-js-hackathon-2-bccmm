@@ -24,11 +24,6 @@ class App extends Component {
             <Route path="/QuizLightpainting" component={QuizLightPainting} />
           </Switch>
         </BrowserRouter>
-
-        {/* <QuizLaser />
-        <QuizLightPainting />
-        <QuizEscapeGames />
-        <QuizImp3D /> */}
       </div>
     );
   }
