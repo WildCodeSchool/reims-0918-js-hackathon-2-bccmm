@@ -403,7 +403,7 @@ export const questionQuizEscapeGames = [
           imageUrl:
             "https://img.grouponcdn.com/deal/23BRDPDafWNDFQhvta4qjpBbFpkh/23-700x420/v1/c700x420.jpg",
           explication:
-            "Il faut jouez avec l’éclairage. Un grand classique, la lumière « noire », des UV. Voire même des lasers"
+            "Il faut jouez avec l’éclairage. Un grand classique. la lumière « noire », des UV. Voire même avec des lasers"
         },
         content:
           "L’éclairage (ou l’absence d’éclairage) contribue à l’ambiance."
