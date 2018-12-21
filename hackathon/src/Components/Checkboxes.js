@@ -7,6 +7,7 @@ import FormControlLabel from "@material-ui/core/FormControlLabel";
 import FormControl from "@material-ui/core/FormControl";
 import FormLabel from "@material-ui/core/FormLabel";
 import ModalDetails from "./ModalDetails";
+import Grid from "@material-ui/core/Grid";
 import "./Checkboxes.css";
 
 const styles = theme => ({
@@ -31,6 +32,12 @@ const styles = theme => ({
   question: {
     fontWeight: "bold",
     textAlign: "center"
+  },
+  banderight: {
+    backgroundColor: "#EF914B"
+  },
+  bandeleft: {
+    backgroundColor: "#005F82"
   }
 });
 
@@ -59,39 +66,46 @@ class CheckBoxes extends Component {
     const { classes } = this.props;
 
     return (
-      <div className={classes.root}>
-        <FormControl component="fieldset" className={classes.formControl}>
-          <FormLabel component="legend" className={classes.question}>
-            <h2> {this.props.question}</h2>
-          </FormLabel>
+      <Grid container>
+        <Grid item xs={12} md={2} className={classes.bandeleft} />
 
-          <RadioGroup
-            aria-label="Question"
-            name="Question"
-            className={classes.group}
-            value={this.state.value}
-            onChange={this.handleChange}
-          >
-            <FormControlLabel
-              value={this.props.answers[0].content}
-              control={<Radio />}
-              label={<h3>{this.props.answers[0].content}</h3>}
-            />
-            <FormControlLabel
-              value={this.props.answers[1].content}
-              control={<Radio />}
-              label={<h3>{this.props.answers[1].content}</h3>}
-            />
-            <FormControlLabel
-              value={this.props.answers[2].content}
-              control={<Radio />}
-              label={<h3>{this.props.answers[2].content}</h3>}
-            />
-          </RadioGroup>
+        <Grid item xs={12} md={8}>
+          <div className={classes.root}>
+            <FormControl component="fieldset" className={classes.formControl}>
+              <FormLabel component="legend" className={classes.question}>
+                <h2> {this.props.question}</h2>
+              </FormLabel>
 
-          <ModalDetails {...this.state} />
-        </FormControl>
-      </div>
+              <RadioGroup
+                aria-label="Question"
+                name="Question"
+                className={classes.group}
+                value={this.state.value}
+                onChange={this.handleChange}
+              >
+                <FormControlLabel
+                  value={this.props.answers[0].content}
+                  control={<Radio />}
+                  label={<h3>{this.props.answers[0].content}</h3>}
+                />
+                <FormControlLabel
+                  value={this.props.answers[1].content}
+                  control={<Radio />}
+                  label={<h3>{this.props.answers[1].content}</h3>}
+                />
+                <FormControlLabel
+                  value={this.props.answers[2].content}
+                  control={<Radio />}
+                  label={<h3>{this.props.answers[2].content}</h3>}
+                />
+              </RadioGroup>
+
+              <ModalDetails {...this.state} />
+            </FormControl>
+          </div>
+        </Grid>
+        <Grid items xs={12} md={2} className={classes.banderight} />
+      </Grid>
     );
   }
 }

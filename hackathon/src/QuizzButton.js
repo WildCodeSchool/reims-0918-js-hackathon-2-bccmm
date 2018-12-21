@@ -84,6 +84,12 @@ const styles = theme => ({
     bottom: -2,
     left: "calc(50% - 9px)",
     transition: theme.transitions.create("opacity")
+  },
+  banderight: {
+    backgroundColor: "#EF914B"
+  },
+  bandeleft: {
+    backgroundColor: "#005F82"
   }
 });
 
@@ -124,37 +130,41 @@ const QuizzButton = props => {
       <Workshop />
       <div className={classes.root}>
         {images.map(image => (
-          <Grid item xs={12} sm={6} key={image.title}>
-            <Link to={`${image.route}`}>
-              <ButtonBase
-                focusRipple
-                className={classes.image}
-                focusVisibleClassName={classes.focusVisible}
-                style={{
-                  width: image.width,
-                  margin: 50
-                }}
-              >
-                <span
-                  className={classes.imageSrc}
+          <Grid container>
+            <Grid item xs={12} md={2} className={classes.bandeleft} />
+            <Grid item xs={12} md={8} key={image.title}>
+              <Link to={`${image.route}`}>
+                <ButtonBase
+                  focusRipple
+                  className={classes.image}
+                  focusVisibleClassName={classes.focusVisible}
                   style={{
-                    backgroundImage: `url(${image.url})`
+                    width: image.width,
+                    margin: 50
                   }}
-                />
-                <span className={classes.imageBackdrop} />
-                <span className={classes.imageButton}>
-                  <Typography
-                    component="span"
-                    variant="title"
-                    color="inherit"
-                    className={classes.imageTitle}
-                  >
-                    <h4>{image.title}</h4>
-                    <span className={classes.imageMarked} />
-                  </Typography>
-                </span>
-              </ButtonBase>
-            </Link>
+                >
+                  <span
+                    className={classes.imageSrc}
+                    style={{
+                      backgroundImage: `url(${image.url})`
+                    }}
+                  />
+                  <span className={classes.imageBackdrop} />
+                  <span className={classes.imageButton}>
+                    <Typography
+                      component="span"
+                      variant="title"
+                      color="inherit"
+                      className={classes.imageTitle}
+                    >
+                      <h4>{image.title}</h4>
+                      <span className={classes.imageMarked} />
+                    </Typography>
+                  </span>
+                </ButtonBase>
+              </Link>
+            </Grid>
+            <Grid items xs={12} md={2} className={classes.banderight} />
           </Grid>
         ))}
       </div>

@@ -98,7 +98,7 @@ const Workshop = props => {
             </a>
           </Grid>
           <Grid item xs={12} md={6}>
-            <h4>QUAND ?</h4>
+            <h5>QUAND ?</h5>
             <Link to="/Calendar">
               <Card className={classes.quand}>
                 <CardContent>
@@ -110,7 +110,7 @@ const Workshop = props => {
             </Link>
           </Grid>
           <Grid item xs={12} md={6}>
-            <h4>QUI ?</h4>
+            <h5>QUI ?</h5>
             <Card className={classes.qui}>
               <CardContent>
                 <p className="qqq">Pour les enfants, à partir de 7 ans.</p>
@@ -120,7 +120,7 @@ const Workshop = props => {
         </Grid>
       </Grid>
       <Grid item xs={12} md={4}>
-        <h4>QUOI ?</h4>
+        <h5>QUOI ?</h5>
         <Card className={classes.quoi}>
           <CardContent>
             <p className="qqq">

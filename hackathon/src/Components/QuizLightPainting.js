@@ -8,14 +8,23 @@ import Grid from "@material-ui/core/Grid";
 
 const styles = theme => ({
   buttonback: {
-    margin: theme.spacing.unit,
     backgroundColor: "#EF914B",
-    color: "white"
+    color: "white",
+    marginLeft: "15px"
   },
   buttoncalendar: {
-    margin: theme.spacing.unit,
     backgroundColor: "#005F82",
-    color: "white"
+    color: "white",
+    marginLeft: "50px"
+  },
+  banderight: {
+    backgroundColor: "#EF914B"
+  },
+  bandeleft: {
+    backgroundColor: "#005F82"
+  },
+  text: {
+    textAlign: "center"
   }
 });
 
@@ -23,27 +32,34 @@ const QuizLightPainting = props => {
   const { classes } = props;
   return (
     <div>
-      <h2>Le Light Painting</h2>
+      <Grid container>
+        <Grid item xs={12} md={2} className={classes.bandeleft} />
+        <Grid item xs={12} md={8} className={classes.text}>
+          <h2>Le Light Painting</h2>
+        </Grid>
+        <Grid item xs={12} md={2} className={classes.banderight} />
+      </Grid>
       {questionQuizLightPainting.map((question, index) => (
         <Checkboxes {...question} key={index} />
       ))}
       <Grid container>
-        <Grid item xs={12} md={1} />
-        <Grid item xs={12} md={3}>
+        <Grid item xs={12} md={2} className={classes.bandeleft} />
+        <Grid item xs={12} md={2}>
           <Link to="/">
             <Button variant="contained" className={classes.buttonback}>
-              Retourà l'accueil
+              Retour à l'accueil
             </Button>
           </Link>
         </Grid>
-        <Grid item xs={12} md={6} />
-        <Grid item xs={12} md={1}>
+        <Grid item xs={12} md={4} />
+        <Grid item xs={12} md={2}>
           <Link to="/calendar">
             <Button variant="contained" className={classes.buttoncalendar}>
               Calendrier
             </Button>
           </Link>
         </Grid>
+        <Grid items xs={12} md={2} className={classes.banderight} />
       </Grid>
     </div>
   );
