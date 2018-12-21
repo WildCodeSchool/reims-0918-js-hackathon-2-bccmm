@@ -403,7 +403,7 @@ export const questionQuizEscapeGames = [
           imageUrl:
             "https://www.grizette.com/wp-content/uploads/2018/07/EscapeGame%C2%A9skryptic-kgb.jpg",
           explication:
-            "Il faut jouez avec l’éclairage. Un grand classique, la lumière « noire », des UV. Voire même des lasers"
+            "Il faut jouez avec l’éclairage. Un grand classique. la lumière « noire », des UV. Voire même avec des lasers"
         },
         content:
           "L’éclairage (ou l’absence d’éclairage) contribue à l’ambiance."
