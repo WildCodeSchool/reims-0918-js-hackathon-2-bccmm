@@ -67,7 +67,14 @@ const QuizLightPainting = props => {
       <Grid container>
         <Grid items xs={12} md={2} className={classes.bandeleft} />
         <Grid items xs={12} md={3} />
-        <Grid items xs={12} md={3}>
+        <Grid
+          items
+          xs={12}
+          md={3}
+          style={{
+            textAlign: "center"
+          }}
+        >
           <a
             style={{
               border: "1px solid #005F82",
