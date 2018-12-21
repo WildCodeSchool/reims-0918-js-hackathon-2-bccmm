@@ -15,7 +15,8 @@ const styles = theme => ({
     display: "flex",
     background: "rgba(0, 0, 0, 0.12)",
     margin: "30px",
-    border: "2px solid #005f82",
+    border: "5px solid #005f82",
+
     borderRadius: "50px 20px",
     width: "65%",
     marginLeft: "17.5%"
