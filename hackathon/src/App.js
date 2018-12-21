@@ -14,7 +14,6 @@ class App extends Component {
     return (
       <div>
         <Header />
-        <Calendars />
         <BrowserRouter>
           <Switch>
             <Route exact path="/" component={QuizzButton} />
@@ -22,13 +21,9 @@ class App extends Component {
             <Route path="/QuizImp3D" component={QuizImp3D} />
             <Route path="/QuizEscapeGame" component={QuizEscapeGames} />
             <Route path="/QuizLightpainting" component={QuizLightPainting} />
+            <Route path="/Calendars" component={Calendars} />
           </Switch>
         </BrowserRouter>
-
-        {/* <QuizLaser />
-        <QuizLightPainting />
-        <QuizEscapeGames />
-        <QuizImp3D /> */}
       </div>
     );
   }
