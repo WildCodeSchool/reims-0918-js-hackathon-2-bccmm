@@ -1,7 +1,19 @@
 h4 {
   color: #ef914b;
+  font-family: "The Northern Block - Cobol-Bold";
+
 }
 
 a {
   text-decoration: none;
+}
+
+@font-face {
+  font-family: "The Northern Block - Cobol-Bold";
+  src: url("Fonts/The Northern Block - Cobol-Bold.otf");
+}
+
+p {
+  font-family: "The Northern Block - Cobol-Bold";
+  font-size: 20px
 }
