@@ -32,6 +32,7 @@ const QuizLaser = props => {
   const { classes } = props;
   return (
     <div
+      id="title"
       style={{
         backgroundImage: "url('')"
       }}
@@ -39,13 +40,28 @@ const QuizLaser = props => {
       <Grid container>
         <Grid item xs={12} md={2} className={classes.bandeleft} />
         <Grid item xs={12} md={8} className={classes.text}>
-          <h2>Les découpeuses laser</h2>
+          <h2>
+            <a href="https://www.youtube.com/watch?v=TEON0Ylz2jA">
+              Les découpeuses laser
+            </a>
+          </h2>
         </Grid>
         <Grid item xs={12} md={2} className={classes.banderight} />
       </Grid>
       {questionQuizLaser.map((question, index) => (
         <Checkboxes {...question} key={index} />
       ))}
+      <Grid container>
+        <Grid items xs={12} md={2} className={classes.bandeleft} />
+        <Grid items xs={12} md={3} />
+        <Grid items xs={12} md={3}>
+          <a href="#title">
+            Pour voir une vidéo sur le laser clique sur le titre en haut !
+          </a>
+        </Grid>
+        <Grid items xs={12} md={2} />
+        <Grid items xs={12} md={2} className={classes.banderight} />
+      </Grid>
       <Grid container>
         <Grid item xs={12} md={2} className={classes.bandeleft} />
         <Grid item xs={12} md={2}>
