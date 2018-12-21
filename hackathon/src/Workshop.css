@@ -13,7 +13,7 @@ a {
   src: url("Fonts/The Northern Block - Cobol-Bold.otf");
 }
 
-p {
+.qqq {
   font-family: "The Northern Block - Cobol-Bold";
   font-size: 20px
 }
