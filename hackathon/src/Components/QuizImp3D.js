@@ -50,12 +50,10 @@ const QuizImp3D = props => {
           <h2>
             <a
               style={{
-                border: "1px solid #005F82",
-                color: "black"
+                fontWeight: "bold"
               }}
-              href="https://www.youtube.com/watch?v=5lzb_Pf6NUI"
             >
-              L'imprimante 3D
+              Quiz: L'imprimante 3D
             </a>
           </h2>
         </Grid>
@@ -77,13 +75,12 @@ const QuizImp3D = props => {
         >
           <a
             style={{
-              border: "1px solid #005F82",
+              textDecoration: "underline #005F82",
               color: "black"
             }}
-            href="#title"
+            href="https://www.youtube.com/watch?v=5lzb_Pf6NUI"
           >
-            Pour voir une vidéo sur l'impression 3D clique sur le titre en haut
-            !
+            Clique pour voir une vidéo de Saint-Ex sur l'impression 3D!
           </a>
         </Grid>
         <Grid items xs={12} md={2} />

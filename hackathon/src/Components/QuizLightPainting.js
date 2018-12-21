@@ -50,12 +50,10 @@ const QuizLightPainting = props => {
           <h2>
             <a
               style={{
-                border: "1px solid #005F82",
-                color: "black"
+                fontWeight: "bold"
               }}
-              href="https://www.youtube.com/watch?v=kgTmB5i0kVU"
             >
-              Le Light Painting
+              Quiz: Le Light Painting
             </a>
           </h2>
         </Grid>
@@ -77,13 +75,12 @@ const QuizLightPainting = props => {
         >
           <a
             style={{
-              border: "1px solid #005F82",
+              textDecoration: "underline #005F82",
               color: "black"
             }}
-            href="#title"
+            href="https://www.youtube.com/watch?v=kgTmB5i0kVU"
           >
-            Pour voir une vidéo sur le light painting clique sur le titre en
-            haut !
+            Clique pour voir une vidéo de Saint-Ex sur le light painting!
           </a>
         </Grid>
         <Grid items xs={12} md={2} />

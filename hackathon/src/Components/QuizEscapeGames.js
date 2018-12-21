@@ -47,7 +47,7 @@ const QuizEscapeGames = props => {
         />
         <Grid item xs={12} md={2} className={classes.bandeleft} />
         <Grid item xs={12} md={8} className={classes.text}>
-          <h2>Les Escape Games</h2>
+          <h2>Quiz: Les Escape Games</h2>
         </Grid>
         <Grid item xs={12} md={2} className={classes.banderight} />
       </Grid>

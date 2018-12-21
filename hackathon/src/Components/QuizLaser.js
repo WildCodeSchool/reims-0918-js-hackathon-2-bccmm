@@ -55,12 +55,10 @@ const QuizLaser = props => {
           <h2>
             <a
               style={{
-                border: "1px solid #005F82",
-                color: "black"
+                fontWeight: "bold"
               }}
-              href="https://www.youtube.com/watch?v=TEON0Ylz2jA"
             >
-              Les découpeuses laser
+              Quiz: Les découpeuses laser
             </a>
           </h2>
         </Grid>
@@ -82,12 +80,12 @@ const QuizLaser = props => {
         >
           <a
             style={{
-              border: "1px solid #005F82",
+              textDecoration: "underline #005F82",
               color: "black"
             }}
-            href="#title"
+            href="https://www.youtube.com/watch?v=TEON0Ylz2jA"
           >
-            Pour voir une vidéo sur le laser clique sur le titre en haut !
+            Clique pour voir une vidéo de Saint-Ex sur le laser!
           </a>
         </Grid>
         <Grid items xs={12} md={2} />
