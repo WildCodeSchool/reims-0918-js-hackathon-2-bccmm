@@ -53,7 +53,13 @@ const QuizLaser = props => {
         <Grid item xs={12} md={2} className={classes.bandeleft} />
         <Grid item xs={12} md={8} className={classes.text}>
           <h2>
-            <a href="https://www.youtube.com/watch?v=TEON0Ylz2jA">
+            <a
+              style={{
+                border: "1px solid #005F82",
+                color: "black"
+              }}
+              href="https://www.youtube.com/watch?v=TEON0Ylz2jA"
+            >
               Les découpeuses laser
             </a>
           </h2>
@@ -67,7 +73,13 @@ const QuizLaser = props => {
         <Grid items xs={12} md={2} className={classes.bandeleft} />
         <Grid items xs={12} md={3} />
         <Grid items xs={12} md={3}>
-          <a href="#title">
+          <a
+            style={{
+              border: "1px solid #005F82",
+              color: "black"
+            }}
+            href="#title"
+          >
             Pour voir une vidéo sur le laser clique sur le titre en haut !
           </a>
         </Grid>
