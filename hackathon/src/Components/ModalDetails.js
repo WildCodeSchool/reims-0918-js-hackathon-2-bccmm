@@ -31,7 +31,8 @@ const styles = theme => ({
   },
   button: {
     backgroundColor: "#ef914b",
-    color: "white"
+    color: "white",
+    float: "right"
   }
 });
 

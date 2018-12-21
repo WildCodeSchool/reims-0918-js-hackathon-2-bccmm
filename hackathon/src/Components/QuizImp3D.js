@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 const QuizImp3D = props => {
   return (
     <div>
+      <h2>L'imprimante 3D</h2>
       {questionQuizImp3D.map((question, index) => (
         <Checkboxes {...question} key={index} />
       ))}
