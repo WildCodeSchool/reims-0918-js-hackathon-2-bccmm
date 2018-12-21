@@ -87,7 +87,7 @@ const Workshop = props => {
             <h4>QUAND ?</h4>
             <Card className={classes.WWW}>
               <CardContent>
-                <p>Pendant la période des vacances scolaires.</p>
+                <p className="qqq">Pendant la période des vacances scolaires.</p>
               </CardContent>
             </Card>
           </Grid>
@@ -95,7 +95,7 @@ const Workshop = props => {
             <h4>QUI ?</h4>
             <Card className={classes.qui}>
               <CardContent>
-                <p>Pour les enfants, à partir de 7 ans.</p>
+                <p className="qqq">Pour les enfants, à partir de 7 ans.</p>
               </CardContent>
             </Card>
           </Grid>
@@ -105,12 +105,12 @@ const Workshop = props => {
         <h4>QUOI ?</h4>
         <Card className={classes.WWW}>
           <CardContent>
-            <p>
+            <p className="qqq">
               Atelier créatifs et ludiques, autour des nouvelles technologies et
               nouveaux outils assistés par ordinateur.
             </p>
             <br />
-            <p>A chaque fois un nouveau thème et des surprises !</p>
+            <p className="qqq">A chaque fois un nouveau thème et des surprises !</p>
           </CardContent>
         </Card>
       </Grid>
