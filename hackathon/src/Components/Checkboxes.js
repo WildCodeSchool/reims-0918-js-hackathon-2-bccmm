@@ -62,8 +62,9 @@ class CheckBoxes extends Component {
       <div className={classes.root}>
         <FormControl component="fieldset" className={classes.formControl}>
           <FormLabel component="legend" className={classes.question}>
-            {this.props.question}
+            <h2> {this.props.question}</h2>
           </FormLabel>
+
           <RadioGroup
             aria-label="Question"
             name="Question"
@@ -74,17 +75,17 @@ class CheckBoxes extends Component {
             <FormControlLabel
               value={this.props.answers[0].content}
               control={<Radio />}
-              label={this.props.answers[0].content}
+              label={<h3>{this.props.answers[0].content}</h3>}
             />
             <FormControlLabel
               value={this.props.answers[1].content}
               control={<Radio />}
-              label={this.props.answers[1].content}
+              label={<h3>{this.props.answers[1].content}</h3>}
             />
             <FormControlLabel
               value={this.props.answers[2].content}
               control={<Radio />}
-              label={this.props.answers[2].content}
+              label={<h3>{this.props.answers[2].content}</h3>}
             />
           </RadioGroup>
 

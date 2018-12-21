@@ -60,11 +60,11 @@ class ModalDetails extends React.Component {
             onClick={this.handleOpen}
             className={classes.button}
           >
-            Valide ta réponse
+           <p>Valide ta réponse</p>
           </Button>
         ) : (
           <Button variant="contained" className={classes.button} disabled>
-            Valide ta réponse
+           <p>Valide ta réponse</p>
           </Button>
         )}
         <Modal
@@ -75,7 +75,7 @@ class ModalDetails extends React.Component {
         >
           <div style={getModalStyle()} className={classes.paper}>
             <Typography variant="h6" id="modal-title" classname="h6">
-              {this.props.description}
+              <p>{this.props.description}</p>
             </Typography>
             <img
               className={classes.img}
