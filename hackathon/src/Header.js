@@ -13,15 +13,6 @@ const Header = () => (
       <span className="blue">E</span>
       <span className="orange">X</span>
     </h1>
-    <img
-      src="http://chaire-idis.fr/wp-content/uploads/2016/02/saintex.jpg"
-      style={{
-        position: "absolute",
-        height: "200px",
-        left: "20px",
-        top: "30px"
-      }}
-    />
   </div>
 );
 
