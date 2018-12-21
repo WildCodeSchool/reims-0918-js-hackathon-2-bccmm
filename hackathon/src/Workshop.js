@@ -4,6 +4,7 @@ import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
 import { Typography } from "@material-ui/core";
 import Grid from "@material-ui/core/Grid";
+import { Link } from "react-router-dom";
 
 import "./Workshop.css";
 
@@ -28,7 +29,7 @@ const styles = {
   pos: {
     marginBottom: 12
   },
-  WWW: {
+  quand: {
     display: "flex",
     flexWrap: "wrap",
     width: "100",
@@ -42,6 +43,18 @@ const styles = {
     "&:hover": {
       boxShadow: "10px 10px 10px #EE904C"
     }
+  },
+  quoi: {
+    display: "flex",
+    flexWrap: "wrap",
+    width: "100",
+    backgroundColor: "#005F82",
+    color: "white",
+    minWidth: 275,
+    padding: "20px",
+    marginRight: "20px",
+    borderRadius: "50px 20px",
+    boxShadow: "10px 10px 10px  #0077b3"
   },
   qui: {
     display: "flex",
@@ -85,11 +98,21 @@ const Workshop = props => {
           </Grid>
           <Grid item xs={12} md={6}>
             <h4>QUAND ?</h4>
+<<<<<<< HEAD
+            <Link to="/Calendars">
+              <Card className={classes.quand}>
+                <CardContent>
+                  <p>Pendant la période des vacances scolaires.</p>
+                </CardContent>
+              </Card>
+            </Link>
+=======
             <Card className={classes.WWW}>
               <CardContent>
                 <p className="qqq">Pendant la période des vacances scolaires.</p>
               </CardContent>
             </Card>
+>>>>>>> dev
           </Grid>
           <Grid item xs={12} md={6}>
             <h4>QUI ?</h4>
@@ -103,7 +126,7 @@ const Workshop = props => {
       </Grid>
       <Grid item xs={12} md={4}>
         <h4>QUOI ?</h4>
-        <Card className={classes.WWW}>
+        <Card className={classes.quoi}>
           <CardContent>
             <p className="qqq">
               Atelier créatifs et ludiques, autour des nouvelles technologies et
