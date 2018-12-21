@@ -61,8 +61,8 @@ button time[datetime="2019-07-09T00:00:00.000"] {
 }
 
 .react-calendar {
-  height: 620px;
-  min-width: 1000px;
+  height: 650px;
+  min-width: 600px;
   font-size: 20px;
 }
 
@@ -87,8 +87,8 @@ button time[datetime="2019-07-09T00:00:00.000"] {
   display: flex;
   margin-top: 10px;
   border: 1px solid #a0a096;
-  width: 1000px;
-  height: 300px;
+  width: 600px;
+  height: 400px;
 }
 
 .caption button {
