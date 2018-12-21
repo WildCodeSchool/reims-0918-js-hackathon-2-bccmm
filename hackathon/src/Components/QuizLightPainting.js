@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 const QuizLightPainting = () => {
   return (
     <div>
+      <h2>Le Light Painting</h2>
       {questionQuizLightPainting.map((question, index) => (
         <Checkboxes {...question} key={index} />
       ))}

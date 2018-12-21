@@ -3,7 +3,7 @@
   src: url("../Fonts/The Northern Block - Cobol-Bold.otf");
 }
 
-p {
+p, h4 {
   font-family: "The Northern Block - Cobol-Bold";
 }
 

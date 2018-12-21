@@ -11,17 +11,24 @@ import "./Checkboxes.css";
 
 const styles = theme => ({
   root: {
-    display: "flex"
+    display: "flex",
+    background: "rgba(0, 0, 0, 0.12)",
+    margin: "30px",
+    border: "2px solid #005f82",
+    borderRadius: "50px 20px",
+    width: "65%",
+    marginLeft: "17.5%"
   },
   formControl: {
-    margin: theme.spacing.unit * 3
+    margin: theme.spacing.unit * 3,
+    width: "100%"
   },
   group: {
     margin: `${theme.spacing.unit}px 0`,
-    
+    marginTop: "35px",
+    marginLeft: "20px"
   },
   question: {
-    color: "#EF914B",
     fontWeight: "bold",
     textAlign: "center"
   }
@@ -53,39 +60,37 @@ class CheckBoxes extends Component {
 
     return (
       <div className={classes.root}>
-       
-          <FormControl component="fieldset" className={classes.formControl}>
-            <FormLabel component="legend" className={classes.question}>
+        <FormControl component="fieldset" className={classes.formControl}>
+          <FormLabel component="legend" className={classes.question}>
             <h2> {this.props.question}</h2>
-            </FormLabel>
-            
-            <RadioGroup
-              aria-label="Question"
-              name="Question"
-              className={classes.group}
-              value={this.state.value}
-              onChange={this.handleChange}
-            >
-              <FormControlLabel
-                value={this.props.answers[0].content}
-                control={<Radio />}
-                label={<h3>{this.props.answers[0].content}</h3>}
-              />
-              <FormControlLabel
-                value={this.props.answers[1].content}
-                control={<Radio />}
-                label={<h3>{this.props.answers[1].content}</h3>}
-              />
-              <FormControlLabel
-                value={this.props.answers[2].content}
-                control={<Radio />}
-                label={<h3>{this.props.answers[2].content}</h3>}
-              />
-            </RadioGroup>
+          </FormLabel>
 
-            <ModalDetails {...this.state} />
-          </FormControl>
-        
+          <RadioGroup
+            aria-label="Question"
+            name="Question"
+            className={classes.group}
+            value={this.state.value}
+            onChange={this.handleChange}
+          >
+            <FormControlLabel
+              value={this.props.answers[0].content}
+              control={<Radio />}
+              label={<h3>{this.props.answers[0].content}</h3>}
+            />
+            <FormControlLabel
+              value={this.props.answers[1].content}
+              control={<Radio />}
+              label={<h3>{this.props.answers[1].content}</h3>}
+            />
+            <FormControlLabel
+              value={this.props.answers[2].content}
+              control={<Radio />}
+              label={<h3>{this.props.answers[2].content}</h3>}
+            />
+          </RadioGroup>
+
+          <ModalDetails {...this.state} />
+        </FormControl>
       </div>
     );
   }
