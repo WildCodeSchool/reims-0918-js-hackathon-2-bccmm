@@ -8,6 +8,7 @@ import QuizLaser from "./Components/QuizLaser";
 import QuizLightPainting from "./Components/QuizLightPainting";
 import QuizEscapeGames from "./Components/QuizEscapeGames";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
+import Footer from "./Footer";
 
 class App extends Component {
   render() {
@@ -24,6 +25,7 @@ class App extends Component {
             <Route path="/Calendar" component={Calendars} />
           </Switch>
         </BrowserRouter>
+        <Footer />
       </div>
     );
   }
