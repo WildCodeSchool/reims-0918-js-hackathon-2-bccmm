@@ -105,7 +105,7 @@ export const questionQuizLaser = [
   {
     id: 1,
     question:
-      "Cette machine coupe bois, plexiglas, médium et grave verre et cuir grâce à ?",
+      "Cette machine coupe: bois, plexiglas, et grave: verre et cuir grâce à ?",
     answers: [
       {
         type: {
@@ -124,13 +124,13 @@ export const questionQuizLaser = [
           explication:
             "La focalisation d'un rayon laser permet d'élever la température d'une zone réduite de matière, jusqu'à vaporisation. La puissance d'un laser varie en fonction du matériau à découper et de son épaisseur."
         },
-        content: "une température élevé"
+        content: "une température élevée"
       },
       {
         type: {
           imageUrl: "https://www.fablablapalisse.fr/images/Photos/IMG_4838.JPG",
           explication:
-            "Le choix de l'oxygène ou de l'azote pour la découpe laser est fonction des critères de qualité exigés pour l'application. "
+            "Le choix de l'oxygène ou de l'azote pour la découpe laser en fonction des critères de qualité exigés pour l'application. "
         },
         content: "un gaz"
       }
@@ -172,36 +172,35 @@ export const questionQuizLaser = [
   },
   {
     id: 3,
-    question:
-      "Quel gaz peut être ajouter a la zone de découpage pour en améliorer l'efficacité ?",
+    question: "Que peut-on fabriquer à l'aide d'un découpeuse laser ?",
     answers: [
       {
         type: {
           imageUrl:
-            "https://www.trumpf.com/filestorage/TRUMPF_Master/_processed_/b/c/csm_Lasers-applications-laser-metal-deposition-process_503350c0cd.jpg",
+            "http://agenda.reims.fr/data/c_2/i_15254/images/main/cabanesoiseaux.jpg",
           explication:
-            "Magnésium, titane & autres matériaux réactifs – argon (haute pression) "
+            "Si vous aimez les oiseaux, Saint-ex vous offre la possibilité de leurs fabriquer un petit nid douillet, sans le moindre effort, merci la découpeuse laser !"
         },
-        content: "Argon"
+        content: "Une cabane à oiseaux"
       },
 
       {
         type: {
           imageUrl:
-            "http://rpn.univ-lorraine.fr/UNIT/physique-quantique-volet1/res/indus3.jpg",
+            "http://www.fabalpes.org/wp-content/uploads/2015/12/P51203-091443.jpg",
           explication:
-            "Aciers inoxydables, aluminium & alliages – azote (haute pression)"
+            "Le carton peut être utilisé dans une découpeuse laser. on découpe les pièces une par une, puis on les assemble !"
         },
-        content: "Azote "
+        content: "Un joli Cerf"
       },
       {
         type: {
           imageUrl:
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRyKgM8ry_l1lf603b4P6jxmHOBtpZ5GuBJvfBerIBxzqOUz9WXg",
+            "http://www.eco2net.com/wp-content/uploads/2014/10/decoupe-laser1.jpg",
           explication:
-            "Carbone et aciers faiblement alliés – oxygène ou azote (haute pression) "
+            "Pas besoin d'assemblage, une plaque de plexiglas, une découpe, et hop, un chat"
         },
-        content: "CO2"
+        content: "Un chat"
       }
     ]
   }
@@ -252,7 +251,7 @@ export const questionQuizLightPainting = [
           imageUrl:
             "https://www.ma-lampe-torche.com/wp-content/uploads/2017/06/lightpainting-intro.jpg",
           explication:
-            "Tu peux faire du LightPainting avec une simple lampe torche ou avec un bâton lumineux spécial pour la pratique du light painting"
+            "Tu peux faire du LightPainting avec une simple lampe torche ou avec un bâton lumineux spécial pour la pratique du light painting, même un sabre laser !"
         },
         content: "Lampes de poche"
       },
@@ -279,34 +278,35 @@ export const questionQuizLightPainting = [
   },
   {
     id: 3,
-    question:
-      "Quelles sont les méthodes utilisés pour faire du light painting ?",
+    question: "Ou peut-tu faire du LightPainting ?",
     answers: [
       {
         type: {
           imageUrl:
-            "http://www.kiosq.sqy.fr/media/loisirs/light-painting/thumbnail.jpeg?time=1543403249",
+            "http://media.topito.com/wp-content/uploads/2012/05/Light-Painting036.jpg",
           explication:
-            "Afin de réaliser une photographie avec du light painting, il est nécessaire d’avoir un appareil photo sur lequel le temps de pose est modifiable, jusqu’à 30 secondes sur les reflex et hybrides"
+            "Si tu as un appareil photo avec un temps de pause de 30s mini, de la lumière et une pièce sombre, tu es un LightPainter !"
         },
-        content: "Image par image "
+        content: "Chez toi"
       },
 
       {
         type: {
           imageUrl:
-            "https://www.mnha.lu/themes/mnha/images/dbfiles/2758/large.jpg",
-          explication: ""
+            "http://www.saintex-reims.com/wp-content/uploads/2016/10/Light-Painting-Infinity.jpg",
+          explication:
+            "Saint-Ex offre la possibilité de découvrir le LightPainting, débloque la vidéo en bas pour en savoir plus !"
         },
-        content: "Montage vidéo "
+        content: "A Saint-Ex !"
       },
       {
         type: {
           imageUrl:
-            "http://www.saintex-reims.com/wp-content/uploads/2016/10/Light-Painting-Infinity.jpg",
-          explication: ""
+            "http://media.topito.com/wp-content/uploads/2012/05/Light-Painting030.jpg",
+          explication:
+            "De préfèrence de nuit, avec appareil photo et lampe torche. Attention de ne pas sortir tout seul !"
         },
-        content: "Vidéo en temps réel"
+        content: "En extérieur"
       }
     ]
   }
@@ -324,7 +324,7 @@ export const questionQuizEscapeGames = [
           explication:
             "Le jeu d'évasion consiste la plupart du temps à parvenir à s’échapper d’une pièce dans une durée limitée (généralement une heure) et se pratique habituellement en groupe de plusieurs personnes"
         },
-        content: "Les participants sont enfermés à l’intérieur d’une salle ?"
+        content: "Les participants sont enfermés à l’intérieur d’une salle"
       },
 
       {
@@ -332,16 +332,16 @@ export const questionQuizEscapeGames = [
           imageUrl:
             "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/86th_FSS_unveils_Port_Royal_Mystery_Escape_Room_160621-F-ZC075-096.jpg/1024px-86th_FSS_unveils_Port_Royal_Mystery_Escape_Room_160621-F-ZC075-096.jpg",
           explication:
-            " les joueurs doivent chercher des indices disséminés dans une pièce, puis les combiner entre eux pour pouvoir avancer dans l’énigme"
+            "les joueurs doivent chercher des indices cachés dans une pièce, puis les combiner entre eux pour pouvoir avancer dans l’énigme"
         },
-        content: "Les participants doivent trouver des énigmes à résoudre ?"
+        content: "Les participants doivent trouver des énigmes à résoudre"
       },
       {
         type: {
           imageUrl:
             "http://www.femina.ch/sites/default/files/styles/portrait__750x500_/public/sablier-temps-ecouler-sable-escape-game-decompte-room-jeux.jpg?itok=bFiftu3T",
           explication:
-            "Le décompte sera lancé dès votre entrée dans l'escape room, si vous ne sortez pas à temps ce n'est pas très grave en fait, le principal est d'aller le plus loin possible dans les énigmes pour découvrir les surprises de cette room..."
+            "Le décompte sera lancé dès votre entrée dans l'escape room, si vous ne sortez pas à temps ce n'est pas très grave en fait, le principal est d'aller le plus loin possible dans les énigmes pour découvrir les surprises de cette pièce !"
         },
         content:
           "Les participants doivent tenter de sortir en moins de 60 minutes ?"
@@ -350,7 +350,7 @@ export const questionQuizEscapeGames = [
   },
   {
     id: 2,
-    question: "Concevoir les énigmes d’un Escape Game",
+    question: "Comment concevoir les énigmes d’un Escape Game ?",
     answers: [
       {
         type: {
@@ -368,7 +368,7 @@ export const questionQuizEscapeGames = [
           imageUrl:
             "https://escape-kit.com/wp-content/uploads/2017/01/e4aa8ed_17040-1fko2ho-300x199.jpg",
           explication:
-            "Pour y réussir vous devrez résoudre fouiller, trouver des objets, des indices, résoudre des énigmes disséminées dans la room"
+            "Pour y réussir vous devrez résoudre fouiller, trouver des objets, des indices, résoudre des énigmes cachées dans la pièce"
         },
         content:
           "Cacher les éléments : les énigmes doivent être cachés, mais pas trop"
@@ -378,7 +378,7 @@ export const questionQuizEscapeGames = [
           imageUrl:
             "https://france3-regions.francetvinfo.fr/bourgogne-franche-comte/sites/regions_france3/files/styles/top_big/public/assets/images/2018/04/25/live-escape-game-1155620_1920-3626707.jpg?itok=pT2h3Pta",
           explication:
-            "Certaines escape room peuvent acceuillir 10 joueurs en simultané"
+            "Certaines escape games peuvent acceuillir 10 joueurs en même temps"
         },
         content:
           "Le nombre d’énigmes à proposer dépend du nombre de participants, du temps disponible, de leur complexité"
@@ -387,13 +387,13 @@ export const questionQuizEscapeGames = [
   },
   {
     id: 3,
-    question: "Créer des effets spéciaux",
+    question: "Comment créer des effets spéciaux",
     answers: [
       {
         type: {
           imageUrl: "https://i.ytimg.com/vi/zkwKMjWC2CU/hqdefault.jpg",
           explication:
-            "Musique d’ambiance. Sinistre. Une playlist par exemple. Ou des sons. Liés à votre scénario"
+            "Mettre en place un musique d’ambiance. Sinistre. Une playlist par exemple. Ou des sons. Liés à votre scénario"
         },
         content: "Diffuser une musique d’ambiance (stressante, sinistre…)."
       },
@@ -403,7 +403,7 @@ export const questionQuizEscapeGames = [
           imageUrl:
             "https://www.grizette.com/wp-content/uploads/2018/07/EscapeGame%C2%A9skryptic-kgb.jpg",
           explication:
-            "Lumières : jouez avec l’éclairage. Un grand classique, la lumière « noire », des UV. Voire même des lasers"
+            "Il faut jouez avec l’éclairage. Un grand classique, la lumière « noire », des UV. Voire même des lasers"
         },
         content:
           "L’éclairage (ou l’absence d’éclairage) contribue à l’ambiance."
